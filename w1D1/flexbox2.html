@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+            .box{
+                    width:1170px;
+                    border:2px solid black;
+                    display:flex;
+                    margin: auto;
+                    /* flex-wrap:wrap;  */
+                    height: 500px;
+
+                    /* justify-content: space-around; */
+                   /* according to height  */
+                   /* align-items: center; */
+                   /* align-content:end; */
+                    
+            }
+                .item{
+                    border:2px solid red;
+                    margin:3px;
+                    padding:5px;
+                    width: 500px;
+                    /* flex-grow: 1; */
+
+
+                }
+
+                .item:nth-child(2){
+                    /* flex-grow: 2; */
+                    background-color: blue;
+                        /* flex-basis: 300px; */
+
+                }
+
+
+   </style> 
+</head>
+<body>
+    <div class="box">
+        <div class="item" style="align-self:flex-end;">home</div>
+        <div class="item" style="align-self:flex-start ;">contact</div>
+        <div class="item">email</div>
+        <div class="item">mobile</div>
+        <div class="item">address</div>
+        <div class="item">detail</div>
+        <div class="item">account</div>
+        <div class="item">name</div> 
+    </div>
+    
+</body>
+</html>
