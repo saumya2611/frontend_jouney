@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+
+<style>
+    .container{
+        background:black;
+        height: 400px;
+        width:500px;
+    }
+    .box{
+        width:100px;
+        height:100px;
+        display: inline-block;
+    }
+
+    /* Position Values---
+    Static,Relative,Absolute,Fixed,Sticky */
+    #box-1{
+        background:red ;
+        /* Relatives to its normal position */
+        /* position: relative;
+        top:20px; */
+
+        position:absolute;
+    }
+    #box-2{
+        background:yellow ;
+    }
+    #box-3{
+        background:green ;
+    }
+    #box-4{
+        background:blue;
+    }
+    #box-5{
+        background:orange ;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+    <div id="box-1" class="box"></div>
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+    <div id="box-4" class="box"></div>
+    </div>
+</body>
+</html>
