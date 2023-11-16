@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // What is a variable?
+        // A variable is a name of a memory location where data resides temporarily.
+        // Variables are stored in RAM.
+
+        // Javascript supports dynamic typing.
+        // We need not specify datatype of the variable
+        // var x=10
+
+        // We can create variable using:
+        // 1. var keyword
+        // 2. let keyword
+        // 3. const keyword
+
+
+
+        //  var age=20;
+        //  var  age=30;
+
+        //  console.log("Age is ", age);
+
+
+         
+         let age=20;
+         age=30;
+
+         console.log("Age is ", age);
+
+
+         // Difference between var and let
+       // using var we can redeclare the variable, but using let we cannot 
+       // redeclare a variable
+
+      // const= constant
+      // if we want to declare a constant value, that means which can't be changed
+      // then we use const keyword
+
+
+
+      const name="lakshay"
+      // name="amit" generate error because const can't be modified
+      console.log("Name is ", name);
+ 
+       const gender="male"
+       console.log("gender is ", gender);
+
+
+
+// Function in JS
+
+/*
+
+What is a function?
+
+A function is a block of code that we write to achieve reusability of code.
+
+Syntax of creating a function
+
+function functionname(parameter list){
+    body of function
+}
+*/
+
+
+// Calulator Using Function 
+
+function cal(){
+    var first_num =Number(prompt("Enter first number"));
+     second_num =Number(prompt("Enter second number"));
+     res=first_num+second_num;
+    document.write("Sum of first num and second num is = ",  res);
+    res=first_num-second_num;
+    document.write("<br>Sub of first num and second num is = ",  res);
+    res=first_num/second_num;
+    document.write("<br>Div of first num and second num is = ",  res);
+    console.log("sum of  first_num and second_num is ",  res);
+
+}
+ cal();
+ 
+// hemant();
+
+// function sub(){
+//     let a=Number(prompt("Enter First Number"));
+//     let b=Number(prompt("Enter Second Number"));
+//     let r=a-b;
+//     document.write("<br>Sub of a and b is ",r);
+// }
+// sub();
+
+
+// var n= prompt("enter your name");
+// console.log(n);
+
+ 
+
+    </script>
+</body>
+</html>

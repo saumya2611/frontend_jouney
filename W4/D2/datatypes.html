@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // Datatype identifies type of the data
+    // In JS we have mainly two categories of datatype
+    // 1. Primitive (types that are independent)
+    // 2. Non-Primitive (which are composed of primitive)
+
+    // 1. Primitive
+
+    // a. Number= contains int and float
+
+    var x= 12;
+    console.log("value of x is ", x);
+    console.log("Type of x is ", typeof x);
+
+
+    var y= 78.888;
+    console.log("value of y is ", y);
+    console.log("Type of y is ", typeof y);
+
+
+    // b. String= Contains alphabets, digits and special characters
+
+    // In JS, string is represented in 3 ways
+
+    // 1. using ''
+    // 2. using ""
+    // 3. using ``  (template literal/ string template)
+    
+    
+    var s1="Hello JS";
+    console.log("value of s1 is ", s1);
+    console.log("Type of s1 is ", typeof s1);
+
+
+      var name="mohit";
+      var age= 18;
+   
+      x=`Name is ${name} and age is ${age}`;
+      console.log(x)
+
+
+      // 3. Boolean
+
+      // Has two possible values . true/ false
+  
+    var ishosteler= true;
+      console.log("value of ishosteler is ", ishosteler);
+      console.log("Type of ishosteler is ", typeof ishosteler);
+
+      // 4. undefined
+      var z;
+      console.log("z is ",z)
+      console.log("Type of z is ", typeof z);
+
+
+      // 5. null  (In js null datatype is represented as object)
+ 
+      var x=null;
+      console.log("x is ",x)
+      console.log("Type of x is ", typeof x);
+
+      // 6. Bigint
+
+      var b= 1555555555555555667n;
+      console.log("b is ",b)
+      console.log("Type of b is ", typeof b);
+
+
+      // 7. Symbol (This datatype is used to create unique keys)
+
+      var s= Symbol("hello");
+      console.log("s is ",s)
+      console.log("Type of s is ", typeof s);
+
+
+
+   var s1= Symbol(67);
+   console.log("s1 is ",s1)
+   console.log("Type of s1 is ", typeof s1);
+
+
+      // 2. Non-Primitive Datatypes
+
+         
+      // 1. Array  (type will be object)
+      var marks=[34,78,23,56,78,90];
+      console.log("marks is ",marks);
+      console.log("Type of marks is ", typeof marks);
+
+      console.table(marks);
+
+         
+      //2. Object = In this type, we store data in the form of key-value pair
+
+      //name(key)="somya"(value)   age(key)=18(value)
+
+
+      var ob={"name":"saumya", "age":18, "marks":90.7};
+      console.log("object is ",ob);
+      console.log("Type of obj is ", typeof ob);
+
+      console.table(ob);
+
+      // Access individual elements of an object
+
+      // First way
+      console.log("name is ", ob.name);
+      console.log("age is ", ob.age);
+      console.log("marks is ", ob.marks);
+
+
+      // Second way
+
+      console.log("name is ", ob["name"]);
+      console.log("age is ", ob["age"]);
+      console.log("marks is ", ob["marks"]);
+
+   </script> 
+</body>
+</html>
