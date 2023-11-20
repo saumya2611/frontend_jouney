@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Program Of grading system
+
+        let s1=Number(prompt("Hindi"));
+        let s2=Number(prompt("English"));
+        let s3=Number(prompt("Math"));
+        let s4=Number(prompt("Physics"));
+        let s5=Number(prompt("Social"));
+        let res;
+
+        function total() {
+             res=s1+s2+s3+s4+s5;
+            console.log("total",res);
+        }
+        function grade() {
+            average=res/5;
+            if(average>=90) {
+                console.log("grade is A+");
+            }
+            else if(average>=80 && average<90) {
+                console.log("grade is A");
+            }
+            else if(average>=70 && average<80) {
+                console.log("grade is B");
+            }
+            else if(average>=60 && average<70) {
+                console.log("grade is C");
+            }
+            else if(average<60) {
+                console.log("grade is D");
+            }
+        }
+        total()
+        grade()
+    </script>
+</body>
+</html>

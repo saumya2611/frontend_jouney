@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+
+    <script>
+    // Javascript is an interpreted language.
+
+    // If we want to run some block of code depending upon a condition,
+    // then we will use conditional statements.
+
+    // Types of conditional statements:
+
+    // 1. if statement
+    // 2. if-else statement
+    // 3. multiple if-else
+    // 4. nested if
+    //5. switch case
+
+    // Syntax of if statement
+
+    // if(condition/expression)
+      // {
+
+      //  body of if
+      //}
+
+      // If the expression/condition evaluates to true, only then if block will
+      // get executed
+
+    //   var x= Number(prompt("Enter a number"));
+    //   if(x==10){
+    //     console.log("x is 10");
+    //   }
+      
+
+      // Write a program to enter age of user and check whether he/she
+      // is eligible for voting or not 
+
+
+      var age=Number(prompt("Enter Your Age"));
+    //   if(age<18){
+    //     console.log("You are not eligible");
+    //   }
+    //   else {
+    //     console.log("You are eligible");
+    // }
+      
+
+    // if expression is true, then if block will run
+    // if expression is false, then else block will run
+
+
+      // Write a program to enter age of user and check whether he/she
+      // is eligible for voting or not and also check whether the age 
+      // is valid or not
+
+
+      // Example of multiple if-else
+      if(age<=0){
+        console.log("Age is invalid");
+      }
+      else if(age>=150){
+        console.log("Age is invalid");
+      }
+     else if(age>=1 && age<18){
+   console.log("You are not eligible for voting");
+     }
+  else{
+    console.log("You are eligible for voting");
+  }
+
+
+
+  // Nesting of if statement
+
+  // if statement within another if statement is called nested-if
+
+  // Write a program to take three numbers as input and print greatest among them
+
+ var a= Number(prompt("Enter first number"));
+ var b= Number(prompt("Enter second number"));
+ var c= Number(prompt("Enter third number"));
+
+ if(a>b){
+    if(a>c){
+      console.log("a is greatest");  
+    }
+ }
+
+ if(b>a){
+    if(b>c){
+      console.log("b is greatest");  
+    }
+ }
+ if(c>a){
+    if(c>b){
+      console.log("c is greatest");  
+    }
+ }
+    
+</script>
+</body>
+</html>
