@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // switch case in js
+        // switch case is an alternate to if-else
+
+        // using switch case, we can run code based on
+        // some expression/condition
+
+
+        // Syntax of swith case
+   /*
+    switch(expression)
+  {
+    case casevalue: statements
+         break
+     case casevalue: statements
+         break
+     case casevalue: statements
+         break
+
+     default: statements
+       
+  }
+
+   */
+
+// // create a calculator with the help of switch case
+
+// let a= Number(prompt("Enter first number"));
+// let b= Number(prompt("Enter second number"));
+
+// let choice= prompt("Enter operator +,-,*,/");
+
+// switch(choice){
+//  case "+": c= a+b;
+//           console.log("addition is ",c);
+//           break;
+// case "-": c= a-b;
+//           console.log("subtraction is ",c);
+//           break;
+// case "*": c= a*b;
+//           console.log("multiplication is ",c);
+//           break;
+// case "/": c= a/b;
+//           console.log("division is ",c);
+//           break;
+//   default:
+ //    console.log("Please enter valid operator among +,-,*,/")
+// }
+
+
+var d= new Date();
+console.log(d);
+var day= d.getDay();
+//console.log("Day is ", day);
+switch(day) {
+    case 0: dayname="Sunday";
+    break;
+    case 1: dayname="Monday";
+    break;
+    case 2: dayname="Tuesday";
+    break;
+    case 3: dayname="Wednesday";
+    break;
+    case 4: dayname="Thursday";
+    break;
+    case 5: dayname="Friday";
+    break;
+    case 6: dayname="Saturday";
+    break;
+}
+console.log("Day is",dayname);
+
+// // Write a program to find smallest and largest number using nested if and multiple
+
+// // if-else among 3 numbers.
+
+    </script>
+</body>
+</html>
