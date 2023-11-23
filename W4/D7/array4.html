@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array4</title>
+  </head>
+  <body>
+    <script>
+      //Enterviwe Questions
+      //ECMA SCRIPCT(ES)= It is a standard of JS
+      // ES(6)=2015
+
+      // const array
+
+      // let ar = [1,2,3,4,5];
+      // ar = [10,20,30,40,50];
+      // console.log('ar is ',ar);
+
+      //const array cannot be redeclared
+
+      // let ar = [1,2,3,4,5];
+      // ar[0] = 100;
+      // console.log('ar is ',ar);
+      //error  ar = [10,20,30,40,50];
+      // console.log('ar is ',ar);
+
+      // Write a program to print factors of a num ber in a array
+
+      //    var num = Number(prompt('Enter Number'));
+      //    let factors = [];
+      //    for(let i = 1; i <= num; i++) {
+      //         if(num % i == 0) {
+      //             fact.push(i);
+      //         }
+      //    }
+      //    console.log('factor is ',factors);
+
+      // Write a program to convert all names in an array to uppercase letters
+
+      // const names = ['saumya','sanaya','suryanshi','anjli','viraj'];
+      // for(let i = 0; i < names.length; i++) {
+      //     console.log(names[i].toUpperCase());
+      // }
+
+      // Filter data in array (user input) that lies between 50 to 100 in another array
+      // let num = Number(prompt('Enter Data'));
+      // res=[67,80,90]
+      // let ar = []
+
+      var x = Number(prompt("Enter number of elements in array"));
+      var arr = [];
+      for (let i = 0; i < x; i++) {
+        var num = Number(prompt("Enter array element"));
+        arr.push(num);
+      }
+      //    console.log(arr);
+      const res = [];
+      for (let i = 0; i < arr.length; i++) {
+        // console.log(i);
+        if (arr[i] >= 50 && arr[i] <= 100) {
+          res.push(arr[i]);
+        }
+      }
+      console.log(res);
+    </script>
+  </body>
+</html>

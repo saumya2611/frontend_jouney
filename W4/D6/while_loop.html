@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop</title>
+</head>
+<body>
+    <script>
+        //while loop
+        //syntax of while loop
+
+        // initialization;
+        // while(termination condition) {
+        //     body of the loop
+        //     loop updation
+        // }
+
+        // Difference between for and while loop
+        // for loop is used when number of iterations are known
+        // while loop is used when number of iterations are unknown
+
+        // Write a program to print 1 to 10 using while loop
+        // let i=1;
+        // while(i<=10) {
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // write a program to odd number 1 to 20
+        // let i=1;
+        // while(i<=20) {
+        //     if(i%2!==0) {
+        //         console.log(i);
+        //     }
+        //     i++;
+        // }
+
+
+        // A number is prime if it's divisible if and only if 1 and itself
+        // 5,7,11,13,17,19
+        //15=1,3,5,15
+        //100=1,2,5,10,20,25,50,100
+        // 13=1,13
+
+        // Write a program to check whether a number is prime or not.
+
+        // var num=Number(prompt("Enter a number"));
+        // let isprime=true;
+        // for(let i=2;i<num;i++) {
+        //     if(num%i==0) {
+        //         isprime=false;
+        //         break;
+        //     }
+        // }
+        // if(isprime==true) {
+        //     console.log("Number is prime");
+        // }
+        // else {
+        //     console.log("Number is not prime");
+        // }
+
+     // write a program whick takes a input value from user and indentify number is prime or not.
+        // let num = 5;
+        // let x = '65';
+        // for(let i = 2; i < num; i++) {
+        //     console.log('num->', num, 'i-->', i, 'num % i-->', num % i, 'ans =>', num % i === 0);
+        //     if(num % i == 0) {
+        //         console.log('Not a prime');
+        //         x = '78'
+        //         break;
+        //     }
+        // }
+
+        // if(x == '65') {
+        // console.log('It is a Prime');
+        // } 
+    // else {
+    //     console.log('Not a Prime')
+    // }
+    let num=Number(prompt("Enter  number"));
+        // for(let i=0; i<=num; i++) {
+        //     if(i%2==0) {
+        //         console.log("even num is",i);
+        //     }
+        // }
+       
+    for(let i = 2; i <= num; i++) {
+        let isprime = true;
+        for(let j = 2; j < i; j++) {
+            if(i % j == 0) {
+                isprime = false;
+                break;
+            }
+        } 
+        if(isprime == true) {
+        console.log('it is prime number',i);
+        }
+        else {
+        console.log('Not prime',i);
+        }
+    }
+    
+    
+    
+
+
+        
+</script>
+</body>
+</html>
