@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Write a program to find second largest
+      // element of an array
+
+      let ar = [10, 20, 30, 40];
+      console.log(ar);
+      for (let i = 0; i < ar.length; i++) {
+        // console.log("i loop i is", i, " =>", ar[i]);
+        for (let j = i + 1; j < ar.length; j++) {
+          /* console.log(
+            "j loop i is =>",
+            i,
+            "=>",
+            "j  is =>",
+            i,
+            "+",
+            1,
+            "=>",
+            i + 1,
+            " ar[j] =>",
+            ar[j]
+          );*/
+          if (ar[i] < ar[j]) {
+            // console.log(ar[i], "<", ar[j]);
+            let c = ar[i];
+            // console.log("c is =>", c);
+            ar[i] = ar[j];
+            // console.log("ar[i] is =>", ar[i]);
+            ar[j] = c;
+            // console.log("ar[j] is =>", ar[j]);
+          }
+        }
+      }
+
+      console.log("array is ", ar);
+      console.log("first largest", ar[0]);
+      console.log("second largest", ar[1]);
+      console.log("third largest", ar[2]);
+      console.log("four largest", ar[3]);
+    </script>
+  </body>
+</html>
