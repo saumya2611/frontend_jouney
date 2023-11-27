@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array6</title>
+  </head>
+  <body>
+    <script>
+      // syntax of reduce = (single output)
+      /*  
+      arrayname.reduce((a,b)=>{
+    body of function
+      });
+        */
+
+      // Wap to add elements of an array
+
+      /*let ar = [3, 6, 7, 8, 9, 12];
+      console.log(ar);
+      let sum = ar.reduce(function (a, b) {
+        return a + b;
+        // console.log("a =", a, "b=", b);
+      });
+
+      console.log("sum is ", sum);*/
+
+      // Wap to find maximum value of an array
+      // ?: = Ternary operator
+      //   let ar1 = [3, 6, 7, 8, 90, 9, 12];
+      //   let max = ar1.reduce(function (a, b) {
+      //     return a > b ? a : b;
+      //   });
+      //   console.log("Max is ", max);
+
+      // Wap to find minimum value of an array
+      // ?: = Ternary operator
+      /*  let ar1 = [3, 6, 7, 8, 90, 9, 12];
+      let min = ar1.reduce(function (a, b) {
+        return a < b ? a : b;
+      });
+      console.log("min is ", min);*/
+
+      // Array user input. [1,4,8,9]
+      // Array square  [1,16,64,81]
+      // Square greater than 50  =[64,81]
+      //Array sum of square =[ 145]
+      let num = Number(prompt("Enter Element"));
+      let ar = [];
+      for (let i = 1; i <= num; i++) {
+        let data = Number(prompt("Enter data"));
+        ar.push(data);
+      }
+      console.log(ar);
+
+      let square = ar.map(function (element) {
+        return element ** 2;
+      });
+      console.log(square);
+
+      let extract = square.filter(function (Element) {
+        return Element > 50;
+      });
+      console.log("which are above from 50 => ", extract);
+
+      let sum_of_square = extract.reduce(function (num1, num2) {
+        let sum = num1 + num2;
+        console.log("sum is => ", sum);
+        return sum ** 2;
+      });
+      console.log("sum of square is => ", sum_of_square);
+    </script>
+  </body>
+</html>
