@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Array Functions
+      //   1. push()
+      //   2. shift()
+      //   3. unshift()
+      //   4. pop()
+      //   5. splice()
+      //   6. slice()
+
+      // push()= push function inserts the element at the end of the array
+
+      //   let ar = [1, 5, 6, 7, 8];
+      //   //   console.log("ar is ", ar);
+      //   ar.push(9);
+      //   console.log("ar after push is ", ar);
+
+      //   ar.push(...[10, 11, 12]);
+      //   console.log(ar);
+
+      // 2. unshift function=  unshift function inserts the element in the beginning of the array
+
+      //   let ar2 = [6, 7, 8];
+      //   ar2.unshift(1);
+      //   console.log(ar2);
+
+      //   ar2.unshift(...[10, 11, 12]);
+      //   console.log(ar2);
+
+      // 3. pop()= pop function removes the element from the end of the array.
+      //   let ar2 = [6, 7, 8];
+      //   ar2.pop();
+      //   console.log(ar2);
+
+      //4. shift()=shift function removes the element from the beginning of the array.
+
+      //   let ar2 = [6, 7, 8];
+      //   ar2.shift();
+      //   console.log(ar2);
+
+      //5. slice= Extract elements from a given
+      //   let ar2 = [10, 20, 30, 40, 50, 60, 70, 80];
+      //   let res = ar2.slice(2, 5);
+      //   console.log(res);
+
+      // (method) Array.slice(start index, end index-1)
+      // starting index= include
+      // ending index= exclude
+
+      // 6. splice function= We can insert as well as delete
+      // elements from an array using splice
+
+      let colors = ["red", "blue", "green"];
+      //   colors.splice(1, 0, "purple");
+      //   console.log(colors);
+
+      //   colors.splice(1, 1, "purple");
+      //   console.log(colors);
+
+      //   colors.splice(1, 1, ...["purple", "black"]);
+      //   console.log(colors);
+
+      colors.splice(3, 0, ...["purple", "black"]);
+      console.log(colors);
+
+      // Array.splice(start: number, deleteCount?: number):
+      // Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
+    </script>
+  </body>
+</html>

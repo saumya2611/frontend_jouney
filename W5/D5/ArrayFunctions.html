@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Fill function in array
+
+      // let ar=[3,6,7,8]
+
+      let ar = new Array(3);
+      console.log(ar);
+      console.log(ar.fill(10));
+
+      let ar1 = [10, 20, 30, 40, 50, 60];
+      console.log(ar1);
+      console.log(ar1.fill(10, 2));
+
+      let ar2 = [6, 8, 9, 1, 2, 3, 5, 6, 7, 8];
+      console.log(ar2);
+      console.log(ar2.fill(100, 2, 4));
+
+      // find function
+
+      const names = ["yogesh", "bapi", "mohit", "rahul", "hemant"];
+      let res = names.find((x) => x === "abcd");
+      console.log("res is ", res);
+
+      // = assignment operator
+      let z = 78;
+      // 78 value is assigned to variable z
+
+      // == operator compares data whether they are equal or not
+
+      // === operator compares value as well as datatype.
+      let x = 10;
+      let y = "10";
+      console.log(x == y);
+      console.log(x === y);
+
+      // findIndex function
+
+      const names1 = ["yogesh", "bapi", "mohit", "rahul", "hemant"];
+      let res1 = names1.findIndex((x) => x === "rahul");
+      console.log("res1 is ", res1);
+
+      if (res1 == -1) {
+        console.log("data not found");
+      } else {
+        console.log("data found at ", res1, "position");
+      }
+    </script>
+  </body>
+</html>
