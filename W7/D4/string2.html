@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // split function
+      // let s = "Yogesh Kumar";
+      // let x = s.split(" ");
+      // console.log("after split", x);
+
+      // Count number of words and characters in a string
+
+      /* let characters = s.length;
+      console.log("Total characters in a string", characters); */
+
+      // let words = x.length;
+      // console.log("Total words in a string", words);
+
+      // Find number of characters in a string without including space.
+
+      /* let str = "saumya singh";
+      let count = 0;
+      for (let i of str) {
+        if (i != " ") {
+          count++;
+        }
+      }
+      console.log(count); */
+      //console.log(str.length);
+      /* let count = 0;
+      for (let i of str) {
+        if (i != " ") {
+          count++;
+        }
+      } */
+
+      //   console.log("length is", count);
+
+      // Count number of vowels in a string.
+
+      /* let vowels = ["a", "e", "i", "o", "u"];
+      let str = "Javascript123";
+      countv = 0;
+      for (let i = 0; i < vowels.length; i++) {
+        console.log(vowels[i], "=>");
+        for (let j = 0; j < str.length; j++) {
+          console.log(str[j]);
+          if (vowels[i] == str[j]) {
+            countv++;
+          }
+        }
+      }
+      console.log(countv); */
+
+      /* for (let i of str) {
+        if (vowels.includes(i)) {
+          countv++;
+        }
+      }
+      console.log("number of vowels", countv); */
+
+      // codePointAt function
+      // Returns ascii code of character at specified index
+
+      /*  let str2 = "abcd";
+      console.log(str2.codePointAt(0)); */
+
+      /*console.log(str2.charAt(0));
+      console.log(str2[0]); */
+
+      // Count number of vowels, consonants, and numbers.
+      // let v = ["a", "e", "i", "o", "u"];
+      let c = "bcdfghjklmnpqrstvwxyz";
+      let n = "0123456789";
+      let x = "abcd123";
+
+      /* let name = ["saumya"];
+      for (let i = 0; i < name.length; i++) {
+        console.log(i);
+      }*/
+
+      let vowels = 0;
+      let consonants = 0;
+      let numbers = 0;
+      for (let i of x) {
+        if ("aeiou".includes(i)) {
+          vowels++;
+        } else if (c.includes(i)) {
+          consonants++;
+        } else if (n.includes(i)) {
+          numbers++;
+        }
+      }
+      console.log(vowels);
+      console.log(consonants);
+      console.log(numbers);
+
+      //  v=1
+      //  c=3
+      //  n=3
+    </script>
+  </body>
+</html>
