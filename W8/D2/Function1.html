@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkPrime(num) {
+        if (num == 0 || num == 1) {
+          return false;
+        }
+        if (num == 2 || num == 3) {
+          return true;
+        }
+
+        for (let i = 2; i < num; i++) {
+          if (num % i == 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      let ar = [1, 2, 3, 4, 5, 6];
+      let res = [];
+      for (let i = 0; i < ar.length; i++) {
+        //  console.log(ar[i]);
+        let isPrime = checkPrime(ar[i]);
+        console.log(isPrime, ar[i]);
+        if (isPrime == true) {
+          res.push(ar[i]);
+        }
+      }
+      console.log(res);
+    </script>
+  </body>
+</html>
