@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ---------------------------------------------------------------------------------------
+
+      // console.log(Math.ceil(56.78)); // nearest largest int
+      // console.log(Math.floor(56.78)); // nearest smallest int
+
+      // ---------------------------------------------------------------------------------------
+
+      // Convert the string.
+      // input= abcdef
+      // output= ABCdef
+
+      /*   let str = prompt("Enter a string");
+              let mid = Math.ceil(str.length / 2);
+
+              let first = str.slice(0, mid).toUpperCase();
+              let second = str.slice(mid).toLowerCase();
+
+              console.log(first + second); */
+
+      // ---------------------------------------------------------------------------------------
+
+      //  Check whether a string is symmetrical or not
+      //  abab
+      //  ab  <=>  //ab
+      //  khokho
+
+      //  case 1: if length even = khokho  (0,3), (3)
+      //  case 2: if length odd= abcab  (mid character ignore)= (0, mid), (mid+1),
+
+      /* let str = "saumya";
+              let mid = Math.ceil(str.length / 2);
+              if (str.length % 2 == 0) {
+                first = str.slice(0, mid);
+                last = str.slice(mid);
+              } else {
+                first = str.slice(0, mid - 1);
+                last = str.slice(mid);
+              }
+
+              if (first == last) {
+                console.log("String is symmetrical");
+              } else {
+                console.log("String is not symmetrical");
+              } */
+
+      //   let output = [4, 5, 8, 10, 12, 13];
+
+      /*  let ar1 = [1, 0, 2, 3, 4];
+      let ar2 = [3, 5, 6, 7, 8, 13];
+      let res = [];
+      for (let i = 0; i < ar1.length; i++) {
+        res.push(ar1[i] + ar2[i]);
+      }
+      console.log(res); */
+    </script>
+  </body>
+</html>
