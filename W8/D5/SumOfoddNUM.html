@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ // Write a Java script program to find sum of all odd numbers between 1 to n.
+//  let num=Number(prompt("Enter Number"));
+//  let sum=0;
+//  for(let i=1;i<=num;i++){
+//     if(i%2!=0){
+//         document.write("odd no is ",i,"<br>");
+//         sum=sum+i;
+//     }
+//  }
+//  document.write("Sum of all odd no is ",sum);
+
+// Write a Java script program to print multiplication table of any number.
+
+//  let table=Number(prompt("Enter Any Number"));
+//  for(let i=1;i<=10;i++){
+//     document.write(i*table,"<br>");
+
+//  }
+
+//  Write a Java script program to find first and last digit of a number.
+
+// let num=13;
+// let last_Digit=num%10;
+// let first_D=num/10;
+// document.write("Last digit is ",last_Digit);
+// document.write("<br>First digit is ",Math.floor(first_D));
+
+
+// Write a Java script program to find sum of first and last digit of a number.
+// let num1=Number(prompt("Enter Number"));
+
+
+// let sum=0;
+
+// for(let i=1;i<=num1;i++){
+//     first=num1/10;
+//     last=num1%10;
+//     sum=Math.floor(first)+last;
+// }
+// document.write("Sum of first and last digit ",sum);
+
+
+var a=Number(prompt("Enter number"));
+document.write("First digit is ",String(a)[0]);
+document.write("<br>last digit is ",String(a).slice(-1));
+
+var sum=(parseInt(String(a)[0])+parseInt(String(a).slice(-1)));
+document.write("<br>Sum of first and last digit number ",sum);
+
+
+
+// Write a Java script program to calculate sum of digits of a number.
+
+// let num=Number(prompt("Enter Number"));
+// let sum=0;
+// let rem;
+// while(num!=0){
+//     rem=num%10;
+//     sum=sum+rem;
+//     num=Math.floor(num/10);
+// }
+// document.write(sum);
+    </script>
+</body>
+</html>
