@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Remove ith character from a string
+
+      //   let s = "javascript";
+
+      //   let i = Number(prompt(`Enter value of i between 0 to  ${s.length - 1}`));
+      //   // output= jvascript
+
+      //   if (i >= 0 && i < s.length) {
+      //     console.log(s.slice(0, i) + s.slice(i + 1));
+      //   } else {
+      //     console.log("value of i is out of range");
+      //   }
+
+      //   // Find first and last word of a given sentence
+
+      //   let s1 = "I love coding";
+      //   let x = s1.split(" ");
+      //   console.log(x);
+      //   console.log("first word is ", x[0]);
+      //   console.log("last word is ", x[x.length - 1]);
+
+      //   // Replace all spaces with a comma
+      //   let s2 = "I love coding";
+      //   s2 = s2.replace(" ", "");
+      //   console.log("After replace", s2);
+
+      //   s2 = s2.replaceAll(" ", ",");
+      //   console.log("After replace", s2);
+
+      // let s="JS is my favourite language"
+      // output= JS is my,favourite language
+
+      let result = "";
+      let str = "JS is my favourite language";
+      let spcount = 0;
+      for (let i of str) {
+        if (i == " ") {
+          spcount++;
+        }
+        if (spcount == 3) {
+          result = result + ",";
+          spcount = 0;
+        } else {
+          result = result + i;
+        }
+      }
+      console.log(result);
+    </script>
+  </body>
+</html>
