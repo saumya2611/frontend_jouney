@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="head2">saumya</h1>
+    <h1 class="head2">suyash</h1>
+    <h1 id="head3">viraj</h1>
+
+    <div>
+      <label for="very-poor">Very Poor</label>
+      <input type="radio" name="rating" value="Very Poor" />
+    </div>
+
+    <div>
+      <label for="poor">Poor</label>
+      <input type="radio" name="rating" value="Poor" />
+    </div>
+
+    <div>
+      <label for="good">Good</label>
+      <input type="radio" name="rating" value="Good" />
+    </div>
+
+    <div>
+      <label for="Excellent">Excellent</label>
+      <input type="radio" name="rating" value="Excellent" />
+    </div>
+    <button onclick="submitRating()">SUBMIT</button>
+    <p id="output"></p>
+    <script>
+      // DOM Methods
+      // 1. getElementById()
+      // 2. getElementsByClassName()
+      // 3. getElementsByClassName()
+      // 4. getElementsByName()
+      // 5. querySelector()
+      // 6. querySelectorAll()
+
+      //   let heading = document.getElementsByTagName("h1");
+      //   console.log(heading);
+      //   console.log(heading[0]);
+      //   heading[0].innerHTML = "suryanshi";
+
+      function submitRating() {
+        const rating = document.getElementsByName("rating");
+        // Return type Nodelist
+        // console.log(rating[0]);
+        rating.forEach((ele) => {
+          if (ele.checked) {
+            document.getElementById(
+              "output"
+            ).innerHTML = `You Have Selected ${ele.value}`;
+          }
+        });
+
+        let a = document.querySelector("h1");
+        let b = document.querySelectorAll("h1");
+        let c = document.querySelectorAll("h1")[0];
+        console.log(c);
+
+        let head1 = document.querySelector("#head3").innerHTML;
+        console.log(head1);
+        let head2 = document.querySelectorAll(".head2").innerHTML;
+        console.log(head2);
+      }
+    </script>
+  </body>
+</html>
