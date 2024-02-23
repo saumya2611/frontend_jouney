@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <p>Adding Div unsing Js Dom</p>
+
+    <ul id="menu">
+      <li>home</li>
+    </ul>
+    <script>
+      // Manipulating HTML document
+
+      // 1. createElement()
+
+      // we can change html in the js run time
+
+      let div = document.createElement("div");
+      div.id = "div1";
+      div.className = "mydiv";
+      div.innerHTML = "This is a div";
+      div.innerHTML = "<p> a paragraph </p>";
+      // div.innerText = "<p> a paragraph </p>"
+      // div.textContent = "MY DIV"
+
+      document.body.appendChild(div);
+
+      // let h1 = document.createElement("h1");
+      // h1.innerHTML = "A heading inside div"
+      // div.appendChild(h1);
+
+      // createElement = its mean we can create html tag with the of js
+      // ul li
+      let li = document.createElement("li");
+      li.textContent = "About Us";
+
+      let li2 = document.createElement("li");
+      li2.textContent = "Contact Us";
+      let menu = document.getElementById("menu");
+      menu.appendChild(li);
+      menu.appendChild(li2);
+
+      let img = document.createElement("img");
+      img.src =
+        "https://media.istockphoto.com/id/1446885495/photo/happy-kiss-and-hug-on-mothers-day-in-living-room-sofa-love-and-relaxing-together-in-australia.webp?b=1&s=170667a&w=0&k=20&c=geJOzt9H-fH3IVTTlBxEMu0mLIEJQswvLuONhaDLsOU=";
+      img.alt = "this is a image";
+
+      document.body.appendChild(img);
+    </script>
+  </body>
+</html>
