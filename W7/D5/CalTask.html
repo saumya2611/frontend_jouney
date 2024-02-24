@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input id="num1" type="number" placeholder="Enter First number" />
+    </div>
+    <div>
+      <input id="num2" type="number" placeholder="Enter second number" />
+    </div>
+    <button id="add" onclick="addition()">addition</button>
+    <button id="sub" onclick="subtraction()">subtraction</button>
+    <button id="mul" onclick="multiply()">multiply</button>
+    <button id="div" onclick="divide()">divide</button>
+    <h1 id="show-result"></h1>
+  </body>
+  <script>
+    let firstNumber = document.getElementById("num1");
+    let secondNumber = document.getElementById("num2");
+    let addNum = document.querySelector("#add");
+    let mulNum = document.querySelector("#mul");
+    let subNum = document.querySelector("#sub");
+    let divNum = document.querySelector("#div");
+    let checkResult = document.querySelector("#show-result");
+
+    function addition() {
+      console.log(firstNumber.value);
+      console.log(secondNumber.value);
+      const res = Number(firstNumber.value) + Number(secondNumber.value);
+      checkResult.innerHTML = `Addition is = ${res}`;
+    }
+
+    function subtraction() {
+      console.log(firstNumber.value);
+      console.log(secondNumber.value);
+      const res = Number(firstNumber.value) - Number(secondNumber.value);
+      checkResult.innerHTML = `subtraction is = ${res}`;
+    }
+
+    function multiply() {
+      console.log(firstNumber.value);
+      console.log(secondNumber.value);
+      const res = Number(firstNumber.value) * Number(secondNumber.value);
+      checkResult.innerHTML = `multiply = ${res}`;
+    }
+
+    function divide() {
+      console.log(firstNumber.value);
+      console.log(secondNumber.value);
+      const res = Number(firstNumber.value) / Number(secondNumber.value);
+      checkResult.innerHTML = `Division is = ${res}`;
+    }
+  </script>
+</html>
