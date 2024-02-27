@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Count number of vowels,consonants and numbers
+      // in a string.
+      // 48-57 number ascii code
+      //   let s = "abcde123";
+      //   let numcount = 0;
+      //   let vcount = 0;
+      //   let concount = 0;
+      //   for (let i of s) {
+      //     console.log();
+      //   }
+      //   console.log("numcount is", numcount);
+
+      // Print ascii code of each character
+      //   let str = "java566script5432";
+      //   let ar = str.split("");
+      //   let numcount = 0;
+      //   ar.forEach(function (element, index) {
+      //     //console.log(element, str.charCodeAt(index));
+      //     let code = str.charCodeAt(index);
+      //     if (code >= 47 && code <= 57) {
+      //       numcount++;
+      //     }
+      //   });
+
+      //   console.log("numcount is", numcount);
+
+      // Convert the string to uppercase
+
+      /*  let s = "Javascript";
+      s = s.toUpperCase();
+      console.log(s); */
+
+      // Convert the string to lowercase
+
+      /*   let s1 = "Javascript";
+      s1 = s1.toLowerCase();
+      console.log(s1); */
+
+      /* let s2 = "javascript";
+      //= Javascript
+      console.log(s2[0].toUpperCase() + s2.slice(2).toLowerCase()); */
+
+      /* let ar = ["bapi", "is", "intelligent"];
+      ar.forEach(function (elem, index) {
+        let x = elem[0].toUpperCase() + elem.slice(1).toLowerCase();
+        console.log(x);
+      });  */
+
+      // Print each element of array with its length
+      /*  let fruits = ["apple", "mango", "grapes", "kiwi"];
+      fruits.forEach(function (elem, index) {
+        console.log(elem, "contains", elem.length, "characters");
+      });  */
+
+      // separate numeric data and text data from an array
+
+      //   num=[1,2,4]
+      //   text=["abc","def"]
+
+      let arr = [1, 2, "abc", "def", 4];
+      let num = [];
+      let text = [];
+
+      arr.forEach(function (element, index) {
+        // console.log(index, "=>", element);
+        if (typeof element == "string") {
+          text.push(element);
+        } else if (element >= 48 || element <= 57) {
+          num.push(element);
+        }
+      });
+      console.log(num);
+      console.log(text);
+    </script>
+  </body>
+</html>
