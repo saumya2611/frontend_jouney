@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*   1. Write a JavaScript program to test whether the first character of a string is uppercase or not.
+
+
+      2. Write a JavaScript program to check a credit card number.
+
+
+      3. Write a pattern that matches e-mail addresses.
+      The personal information part contains the following ASCII characters.
+
+      Uppercase (A-Z) and lowercase (a-z) English letters.
+      Digits (0-9).
+      Characters ! # $ % & ' * + - / = ? ^ _ ` { | } ~
+      Character . ( period, dot or fullstop) provided that it is not the first or last character and it will not come one after the other.
+
+
+      4. Write a JavaScript program to search a date within a string.
+
+      5. Write a JavaScript program that works as a regular expression trim function (string).
+
+      6. Write a JavaScript program to count number of words in string.
+      Note :
+      - Remove white-space from start and end position.
+      - Convert 2 or more spaces to 1.
+
+      7. Write a JavaScript function to check whether a given value is IP value or not.
+
+
+      8. Write a JavaScript function to count the number of vowels in a given string.
+
+
+      9. Write a JavaScript function to check whether a given value is a valid URL or not.
+
+
+      10. Write a JavaScript function to check whether a given value is alpha numeric or not.
+
+
+      11. Write a JavaScript function to check whether a given value is a time string or not.
+
+
+      12. Write a JavaScript function to check whether a given value is a social security number or not.
+
+      13. Write a JavaScript function to check whether a given value is a hexcolor value or not.
+
+
+      14. Write a JavaScript function to check if a given value contains alpha, a dash and an underscore.
+
+      15. Write a javascript code to validate mobile number */
+
+      // 1. Write a JavaScript program to test whether the first character of a string is uppercase or not.
+      // 'javascript'  output: 'Javascript'
+
+      /* let str = "Javascript is a programming language is";
+      let regex = /^[A-Z]/;
+      if (regex.test(str)) {
+        console.log(`first character of string is uppercase ${regex}.source`);
+      } else {
+        console.log(
+          `first character of string is not uppercase ${regex}.source`
+        );
+      } */
+
+      //  8. Write a JavaScript function to count the number of vowels in a given string.
+      /*  let str = "bapi is the intelligent in the class";
+      let regex = /[aeiou]/gi;
+      let vowel = str.match(regex);
+      console.log("vowel of string ", vowel.length); */
+
+      //   2. Write a JavaScript program to check a credit card number.
+      /*  let creditCard = "913453456312454545";
+      let regex = /[0-9]{16}$/g;
+      let check = regex.test(creditCard);
+      console.log(check); */
+      // 15. Write a javascript code to validate mobile number
+      /*  let mobileNumber = "9134534563";
+      let regex1 = /^(91)/;
+      let regex = /[0-9]{10}$/;
+      if (regex1.test(mobileNumber) && regex.test(mobileNumber)) {
+        console.log(true);
+      } else {
+        console.log(false);
+      } */
+
+      //  13. Write a JavaScript function to check whether a given value is a hexcolor value or not.
+      //  output: #rrggbb
+      /*  let color = "#rrggbb";
+      let regex = /^\W\(r){2}(g){2}(b){2}/;
+      if (regex.test(color)) {
+        console.log(`match the string`);
+      } else {
+        console.log(`does't match the string`);
+      } */
+
+      /* 6. Write a JavaScript program to count number of words in string.
+      Note :
+      - Remove white-space from start and end position.
+      - Convert 2 or more spaces to 1. */
+
+      let str = "       saumya      ";
+      let remove = str.trim();
+      console.log(remove.length);
+    </script>
+  </body>
+</html>
