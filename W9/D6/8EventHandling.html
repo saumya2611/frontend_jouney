@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <body onload="func1()"> -->
+    <!-- <p id="para1">A Paragraph</p> -->
+    <!-- <button id="btn1">Click</button> -->
+
+    <!-- event Bubling it's work lowest to highest -->
+    <div onclick="divclick()">
+      <div>
+        <button onclick="btnclick()">Click</button>
+      </div>
+    </div>
+
+    <script>
+      function divclick() {
+        console.log("div is clicked");
+      }
+
+      function btnclick() {
+        console.log("button is clicked");
+      }
+      // onload Event
+
+      /*  function func1() {
+        document.title = "Title Changed";
+        document.bgColor = "red";
+      }
+
+      //   window.addEventListener("load", func1);
+
+      let img = document.createElement("img");
+      img.src = "MainAfter.webp";
+    //   img.height = "50px";
+      document.body.appendChild(img);
+
+      img.onload = function () {
+        alert("Image is loaded");
+      }; */
+
+      //   let para1 = document.querySelector("#para1");
+
+      /*  para1.addEventListener("mouseover", function () {
+        para1.style.background = "blue";
+        para1.style.color = "white";
+        para1.style.fontSize = "25px";
+      });
+
+      para1.addEventListener("mouseout", function () {
+        para1.style.background = "";
+        para1.style.color = "";
+        para1.style.fontSize = "";
+      }); */
+
+      //   parent.onmouseover = function () {
+      //     para1.style.background = "blue";
+      //     para1.style.color = "white";
+      //     para1.style.fontSize = "25px";
+      //   };
+
+      //   parent.onmouseout = function () {
+      //     para1.style.background = "";
+      //     para1.style.color = "";
+      //     para1.style.fontSize = "";
+      //   };
+
+      // ondblclick()
+
+      //   btn1.onclick = function (event) {
+      //     alert("Button is clicked");
+      //     console.log(event.type);
+      //   };
+    </script>
+  </body>
+</html>
