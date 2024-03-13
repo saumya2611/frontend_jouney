@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form name="myform" onsubmit="return validateform()">
+      Enter your name:
+      <input type="text" name="name" />
+      <br />
+      Enter your password:
+      <input type="password" name="password" />
+      <br />
+      Enter confirm password:
+      <input type="password" name="cpassword" />
+      <br />
+      Enter age:
+      <input type="text" name="age" />
+      <br />
+      Enter email:
+      <input type="text" name="email" />
+      <br />
+      Select your country
+      <select name="country">
+        <option value="-1" selected>Choose your country--</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="INDIA">INDIA</option>
+      </select>
+      <input type="submit" value="submit" />
+    </form>
+    <script>
+      // onsubmit event
+
+      function validateform() {
+        const name = document.myform.name.value;
+        const password = document.myform.password.value;
+        const cpassword = document.myform.cpassword.value;
+        const age = document.myform.age.value;
+        const email = document.myform.email.value;
+        const country = document.myform.country.value;
+
+        if (name == "" || name == null) {
+          alert("Name can't be blank and it must be alphabetic");
+          return false;
+        }
+        if (password.length < 6) {
+          alert("Password must be of min 6 characters");
+          return false;
+        }
+        if (password !== cpassword) {
+          alert("Password and confirm password must be equal");
+          return false;
+        }
+        if (isNaN(age)) {
+          alert("Age must be a number");
+          return false;
+        }
+        if (country == -1) {
+          alert("Please select country");
+          return false;
+        }
+
+        let atpos = email.indexOf("@");
+        let dotpos = email.lastIndexOf(".");
+
+        console.log("atpos", atpos);
+        console.log("dotpos", dotpos);
+        if (atpos < 1 || dotpos - atpos < 2) {
+          alert("Please enter correct email");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
