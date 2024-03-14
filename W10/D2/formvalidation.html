@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .form {
+        width: 60%;
+        margin: auto;
+        height: 105vh;
+        border: 1px solid rgb(197, 194, 194);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+        margin-top: 0.3rem;
+      }
+
+      .form-set {
+        margin-left: 3rem;
+      }
+
+      label {
+        display: block;
+        /* text-align: center; */
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      input {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        width: 80%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        border: 1px solid rgb(197, 194, 194);
+        border-radius: 0.3rem;
+      }
+
+      input:hover {
+        border-color: purple;
+      }
+
+      select {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        width: 80%;
+      }
+
+      .btn {
+        margin-top: 1rem;
+        padding-right: 0.5rem;
+        /* width: 30%; */
+        font-size: 1rem;
+        background-color: #04aa6d;
+        color: #fff;
+      }
+
+      .btn:hover {
+        background-color: #e7e7e7;
+        color: #04aa6d;
+        border: none;
+      }
+
+      .error {
+        display: none;
+        color: red;
+        font-size: 0.75rem;
+        padding-left: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form">
+      <div class="form-set">
+        <form name="myform">
+          <div>
+            <label for="">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <p id="name_text" class="error">*Name is invalid</p>
+          </div>
+          <div>
+            <label for="">Password:</label>
+            <input
+              type="password"
+              name="password"
+              placeholder=" your password"
+            />
+            <p id="pass_text" class="error">*password is mandatory field</p>
+          </div>
+          <div>
+            <label> Confirm Password:</label>
+            <input
+              type="password"
+              name="cpassword"
+              placeholder=" your confirm password"
+            />
+            <p id="confirm_text" class="error">
+              *confirm password is mandatory field
+            </p>
+          </div>
+
+          <div>
+            <label for="">Age:</label>
+            <input type="text" name="age" placeholder=" your age" />
+            <p id="age_text" class="error">*age must be between 18 to 22</p>
+          </div>
+          <div>
+            <label>Email:</label>
+            <input type="text" name="email" placeholder=" your email" />
+            <p id="email_text" class="error">*email is mandatory field</p>
+          </div>
+
+          <div>
+            <label>Phone number:</label>
+            <input type="text" name="phone" placeholder=" your phone" />
+            <p id="mob_text" class="error">*mob is mandatory field</p>
+          </div>
+          <div>
+            <label for="">Country</label>
+            <select name="country">
+              <option value="-1" selected>Choose your country--</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="INDIA">INDIA</option>
+            </select>
+          </div>
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+    </div>
+    <script>
+      // onsubmit event
+
+      const name = document.myform.name;
+      const password = document.myform.password;
+      const cpassword = document.myform.cpassword;
+      const age = document.myform.age;
+      const email = document.myform.email;
+      const country = document.myform.country;
+
+      name.addEventListener("blur", function () {
+        console.log("name is blurred");
+        let regex = /^([A-Za-z\s]+)$/;
+        let str = name.value;
+
+        if (regex.test(str)) {
+          console.log("matches");
+          name.style.border = "2px solid green";
+          // name_text.innerHTML = "none";
+          name_text.style.display = "none";
+        } else {
+          console.log("does not matches");
+          name.style.border = "2px solid red";
+          // help_text.innerHTML = "* Name is invalid";
+          // help_text.style.color = "red";
+          // help_text.style.fontSize = ".75rem";
+          // help_text.style.paddingLeft = "1rem";
+          name_text.style.display = "block";
+        }
+      });
+
+      password.addEventListener("blur", function () {
+        console.log("password is blurred");
+        let regex = /^[A-Z]([A-Za-z0-9@#$]){5,10}$/;
+        let str = password.value;
+
+        if (regex.test(str)) {
+          console.log("matches", str);
+          password.style.border = "2px solid green";
+          pass_text.style.display = "none";
+        } else {
+          console.log("does not matches");
+          password.style.border = "2px solid red";
+          pass_text.style.display = "block";
+        }
+      });
+
+      cpassword.addEventListener("blur", function () {
+        // console.log("cpassword is blurred");
+        let regex = /^[A-Z]([A-Za-z0-9@#$]){5,10}$/;
+        let str = cpassword.value;
+
+        if (regex.test(str) && password !== cpassword) {
+          console.log("matches", str);
+          cpassword.style.border = "2px solid green";
+          confirm_text.style.display = "none";
+        } else {
+          console.log("does not matches", str);
+          cpassword.style.border = "2px solid red";
+          confirm_text.style.display = "block";
+        }
+      });
+
+      age.addEventListener("blur", function () {
+        let regex = /^(1[89]|20|21|22)$/;
+        let str = age.value;
+
+        if (regex.test(str)) {
+          console.log("valid", str);
+          age.style.border = "2px solid green";
+          age_text.style.display = "none";
+        } else {
+          console.log("not valid", str);
+          age.style.border = "2px solid red";
+          age_text.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
