@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 2. Write a script to dynamically create a new HTML element and append it to the DOM. -->
+  </body>
+
+  <script>
+    const div = document.createElement("div");
+    div.id = "container";
+
+    const h1 = document.createElement("h1");
+    h1.textContent = "This is Heading";
+
+    const p = document.createElement("p");
+    p.textContent = "This is Paragraph";
+
+    const ul = document.createElement("ul");
+    ul.className = "menu";
+    const li = document.createElement("li");
+    li.textContent = "saumya";
+
+    document.body.appendChild(div);
+    div.appendChild(h1);
+    div.appendChild(p);
+    div.appendChild(ul);
+    ul.appendChild(li);
+    console.log(div);
+
+    const menu = document.querySelector(".menu");
+    const firstChild = menu.firstElementChild;
+
+    const nameList = ["bapi", "suyash", "viraj"];
+
+    const name = nameList.map((ele) => {
+      const li = document.createElement("li");
+      li.innerHTML = ele;
+      return li;
+    });
+
+    firstChild.append(...name);
+  </script>
+</html>
