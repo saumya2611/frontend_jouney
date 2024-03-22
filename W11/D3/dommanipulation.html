@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HEADING 1</h1>
+    <h2>HEADING 2</h2>
+    <a
+      href="https://stackoverflow.com/questions/42528100/nth-child-in-javascript"
+      target="_blank"
+      id="link1"
+      >click</a
+    >
+    <br />
+    List of courses:
+    <ul id="menu">
+      <li>C</li>
+      <li id="c++">C++</li>
+      <li>Pascal</li>
+    </ul>
+
+    <script>
+      // 1. before function= before function is used to insert a node before an HTML element.
+
+      // 2. after function= after function is used to insert a node after an HTML element.
+
+      let h1 = document.querySelector("h1");
+      let para = document.createElement("p");
+      para.innerHTML = "A paragraph";
+      //   h1.before(para);
+
+      //   // 3. use before function for adding multiple nodes.
+
+      //   let list = ["Java", "JS", "Python", "R"];
+      //   let nodes = list.map((element, index) => {
+      //     let li = document.createElement("li");
+      //     li.textContent = element;
+      //     return li;
+      //   });
+
+      //   let menu = document.querySelector("#menu");
+      //   menu.firstElementChild.before(...nodes);
+      // menu.lastElementChild.after(...nodes);
+      // or try
+      //menu.lastElementChild.append(...nodes);
+
+      // 3. removeChild function is used to remove a child from parent node.
+
+      // let menu = document.querySelector("#menu");
+      // remove first child
+      //menu.removeChild(menu.firstElementChild);
+
+      // remove last child
+      // menu.removeChild(menu.lastElementChild);
+
+      // remove particular child
+      // menu.removeChild(document.getElementById("c++"));
+
+      // remove all children
+
+      //   while (menu.firstChild) {
+      //     menu.removeChild(menu.firstChild);
+      //   }
+
+      //4. replace child
+
+      // c to c language
+
+      //   let menu = document.querySelector("#menu");
+
+      //   let li = document.createElement("li");
+      //   li.textContent = "C LANGUAGE";
+      //   menu.replaceChild(li, menu.firstElementChild);
+
+      // Get attribute value= getAttribute()
+
+      let link = document.querySelector("a");
+      console.log(link.getAttribute("href"));
+      console.log(link.getAttribute("target"));
+      console.log(link.getAttribute("id"));
+    </script>
+  </body>
+</html>
