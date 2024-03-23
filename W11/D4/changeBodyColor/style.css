@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#heading {
+   text-align: center;
+   padding-top: 8rem;
+}
+
+#btn {
+    display: block;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 1rem 3rem;
+}
+
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: cyan;
+}
