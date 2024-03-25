@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Traversing The Dom</h1>
+      <div class="parent">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let output;
+    // Get child element
+
+    const parent = document.querySelector(".parent");
+    output = parent.children;
+
+    output = parent.children[1];
+    output = parent.children[1].innerText = "child Two";
+    output = parent.children[1].className;
+    output = parent.children[1].nodeName;
+
+    parent.firstElementChild.innerText = "child One";
+    parent.lastElementChild.innerText = "child Three";
+
+    // Get Parent Elements from a child
+    const child = document.querySelector(".child");
+    output = child.parentElement;
+
+    // sibling Elements
+    const secondItem = document.querySelector(".child:nth-child(2)");
+    output = secondItem;
+    output = secondItem.nextElementSibling;
+    output = secondItem.previousElementSibling;
+
+    console.log(output);
+  </script>
+</html>
