@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li id="pizza">PIZZA</li>
+      <li id="pasta">PASTA</li>
+      <li id="burger">BURGER</li>
+      <li id="noodles">NOODLES</li>
+    </ul>
+
+    <script>
+      //   document.getElementById("pizza").addEventListener("click", function () {
+      //     document.getElementById("pizza").style.background = "red";
+      //     console.log("You have clicked on pizza");
+      //   });
+      //   document.getElementById("pasta").addEventListener("click", function () {
+      //     document.getElementById("pasta").style.background = "red";
+      //     console.log("You have clicked on pasta");
+      //   });
+      //   document.getElementById("burger").addEventListener("click", function () {
+      //     document.getElementById("burger").style.background = "red";
+      //     console.log("You have clicked on burger");
+      //   });
+
+      //   document.getElementById("noodles").addEventListener("click", function () {
+      //     document.getElementById("noodles").style.background = "red";
+      //     console.log("You have clicked on noodles");
+      //   });
+
+      let menu = document.getElementById("menu");
+      menu.addEventListener("click", function (event) {
+        let id = event.target.id;
+        switch (id) {
+          case "pizza":
+            console.log("You have clicked on pizza");
+            break;
+
+          case "burger":
+            console.log("You have clicked on burger");
+            break;
+
+          case "pasta":
+            console.log("You have clicked on pasta");
+            break;
+
+          case "noodles":
+            console.log("You have clicked on noodles");
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>
