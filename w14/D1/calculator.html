@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      Enter First Number:
+      <input id="firstNum" type="text" />
+    </div>
+    <div>
+      Enter Second Number:
+      <input id="secondNum" type="text" />
+    </div>
+    <button id="plus" onclick="calculate()">+</button>
+    <button id="minus" onclick="calculate()">-</button>
+    <button id="mul" onclick="calculate()">*</button>
+    <button id="div" onclick="calculate()">/</button>
+    <p id="res"></p>
+  </body>
+
+  <script type="module">
+    import { addition, substraction, multiply, divison } from "./cal.js";
+
+    function calculate() {
+      console.log("hello");
+    }
+
+    // function calculate(e) {
+    //   let first = document.querySelector("#firstNum").value;
+    //   let second = document.querySelector("#secondNum").value;
+    //   let res = document.querySelector("#res");
+
+    //   console.log("button is clicked", e.target.id);
+
+    //   if (this.id == "plus") {
+    //     res.innerHTML = addition(first, second);
+    //   } else if (this.id == "minus") {
+    //     res.innerHTML = substraction(first, second);
+    //   } else if (this.id == "mul") {
+    //     res.innerHTML = multiply(first, second);
+    //   } else if (this.id == "div") {
+    //     res.innerHTML = divison(first, second);
+    //   }
+    // }
+
+    // addBtn.addEventListener("click", function () {
+    //   res.innerHTML = addition(first.value, second.value);
+    // });
+
+    // minusBtn.addEventListener("click", function () {
+    //   res.innerHTML = substraction(first.value, second.value);
+    // });
+
+    // multiBtn.addEventListener("click", function (event) {
+    //   res.innerHTML = multiply(first.value, second.value);
+    // });
+
+    // divBtn.addEventListener("click", function () {
+    //   res.innerHTML = divison(first.value, second.value);
+    // });
+  </script>
+</html>
