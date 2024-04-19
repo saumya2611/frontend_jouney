@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // reduce method
+        // map,reduce,filter= higher order array methods
+      //1.reduce
+        let ar=[10,20,30,40,50];
+        let  ar2=  ar.reduce(
+         function(a,b){
+         return a+b;
+     
+         }
+        );
+     
+        console.log("sum is ",ar2);
+     
+        // search specific element in an array and also print the
+        // index if the element found
+     //include
+       var num= Number(prompt("Enter no to be searched"));
+     //   if(ar.includes(num)){
+     //     console.log("Element found at index", ar.indexOf(num));
+     
+     //   }
+     //   else{
+     //     console.log("not found");
+     //   }
+     
+       // searching element using foreach loop
+     
+       search=false;
+       ar.forEach(
+         function(element){
+     
+             if (element===num){
+                search=true;
+             }
+           
+         }
+       );
+     
+       if(search){
+         console.log("element found at",ar.indexOf(num));
+       }
+       else{
+         console.log("element not found");
+       }
+     
+     
+     
+     
+     
+     
+         </script>
+</body>
+</html>
