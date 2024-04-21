@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter First Name:
+    <input type="text" id="fname" class="name" />
+    <br />
+    <br />
+    Enter Last Name:
+    <input type="text" id="lname" class="name" />
+    <br />
+    <button class="btn">ok</button>
+    <h2 id="msg">saumya</h2>
+  </body>
+
+  <script>
+    //  let firstName = document.getElementById("fname");
+
+    //  let lastName = document.getElementById("lname");
+    //  let Submit_Button = document.querySelector(".btn");
+
+    // console.log(name);
+
+    // name.addEventListener("change", function (e) {
+    //   console.log(e.target.value);
+    // });
+
+    let firstName = document.getElementsByClassName("name");
+    let lastName = document.getElementsByClassName("name");
+    let Submit_Button = document.querySelector(".btn");
+    let res = document.getElementsByClassName("name");
+    // console.log(res);
+    Submit_Button.addEventListener("click", function (eve) {
+      console.log(res);
+
+      Array.from(res).forEach((Element) => {
+        console.log(Element.value);
+      });
+
+      //   console.log(`Last-Name is ${lastName.value}`);
+      //   document.getElementById(
+      //     "msg"
+      //   ).innerHTML = `Hi ${firstName.value}  ${lastName.value}`;
+      document.querySelector("#msg").innerHTML = "suyash";
+    });
+    // function greet() {
+    //   let name = document.getElementById("name");
+    //   console.log("name is ", name.value);
+    //   document.getElementById("msg").innerHTML = `How are uhh ${name.value}`;
+    // }
+  </script>
+</html>
