@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="data1.styling.js" />
+  </head>
+  <body>
+    <div id="form-container">
+      <h1>Student Form</h1>
+      <form id="form">
+        <div>
+          First Name:
+          <input id="f-name" type="text" class="pt mt" />
+        </div>
+        <div>
+          Last Name:
+          <input id="l-name" type="text" class="pt mt" />
+        </div>
+        <div>
+          E-mail:
+          <input id="email" type="email" class="pt ml mt" />
+        </div>
+        <div>
+          Phone:
+          <input id="phone" type="number" class="pt ml mt" />
+        </div>
+        <div>
+          Gender:
+          <input
+            type="radio"
+            name="g"
+            value="Male"
+            class="gender pt ml-1 mt"
+          />Male
+          <input
+            type="radio"
+            name="g"
+            value="Female"
+            class="gender pt ml-1 mt"
+          />Female
+          <input
+            type="radio"
+            name="g"
+            value="other"
+            class="gender pt ml-1 mt"
+          />Other
+        </div>
+
+        <div>
+          <button id="btn" class="mt">submit</button>
+        </div>
+      </form>
+      <button id="show-all" class="ml">show-all-button</button>
+      <div id="table"></div>
+    </div>
+    <script src="data1.styling.js"></script>
+  </body>
+</html>
