@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling | Capturing | Delegation</title>
+    <script src="event2delegation.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box {
+        min-width: 100px;
+        min-height: 100px;
+        padding: 5rem;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .grandparent {
+        background: #b1d4e0;
+        color: black;
+      }
+
+      .parent {
+        background: #145de0;
+      }
+
+      .child {
+        background: #0c2d48;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="grandparent box">
+        Grandparent
+        <div class="parent box">
+          Parent
+          <div class="child box">Child</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
