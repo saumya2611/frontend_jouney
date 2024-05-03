@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="FormStyle.css" />
+  </head>
+
+  <body>
+    <div id="form-parent">
+      <h1><u>Project Management</u></h1>
+      <div class="form">
+        <form id="form">
+          <div class="text">
+            <label>Poject Name:</label>
+            <input class="text-width" type="text" placeholder="project name" />
+          </div>
+          <div class="text">
+            <label class="padding-right">Assigned to:</label>
+            <select id="select">
+              <option value="">Er Merry Petision</option>
+              <option value="">Er Merry Petision</option>
+              <option value="">Er Merry Petision</option>
+            </select>
+          </div>
+          <div class="text">
+            <label class="padding-right">start date:</label>
+            <input class="text-width" type="date" />
+          </div>
+
+          <div class="text">
+            <label class="padding-right">End date:</label>
+            <input class="text-width" type="date" />
+          </div>
+
+          <div class="text">
+            <label>priority: </label>
+            <input type="radio" name="p" id="x" />High
+            <input type="radio" name="p" id="x" />Average
+            <input type="radio" name="p" id="x" />Low <br /><br />
+          </div>
+          <div class="text">
+            <label class="padding-right">Description: &nbsp </label>
+            <textarea name="" id="textarea" cols="25" rows="2"></textarea>
+          </div>
+          <div class="text">
+            <button class="btn">submit</button>
+            <button class="btn btn-color">cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
