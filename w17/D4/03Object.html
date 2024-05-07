@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Array of objects
+
+      /*  const students = [
+        { id: 1, name: "manish", city: "delhi", marks: 50 },
+        { id: 2, name: "soumya", city: "pune", marks: 55 },
+        { id: 3, name: "hemant", city: "mumbai", marks: 40 },
+        { id: 4, name: "bapi", city: "delhi", marks: 59 },
+        { id: 5, name: "rahul", city: "jaipur", marks: 60 },
+      ];
+
+      console.log(students); */
+
+      // Print all names
+
+      // Change marks of manish = 60
+      /* students[0].marks = 60;
+      students.map(function (elem, index) {
+        console.log(elem.name, elem.city, elem.id, elem.marks);
+      }); */
+
+      const emp = { name: "soumya", salary: 700000, designation: "developer" };
+
+      // Print All keys of an object
+      // Object.keys()= Returns array of keys
+
+      /* const k = Object.keys(emp);
+      console.log("Keys of emp are", k);
+
+      for (let i of k) {
+        console.log(i, i.length);
+      } */
+
+      //. Print all values of an object
+      // Object.values()= Returns array of values
+
+      /* const v = Object.values(emp);
+      console.log("Values of emp are", v); */
+
+      // Print key-value pair
+      // Object.entries
+
+      const ar = Object.entries(emp);
+      console.log(ar);
+
+      for (let i of ar) {
+        console.log(i);
+      }
+
+      // Another way of creating object = By using Object instance
+      // Object = properties + Function
+
+      /*  let person = new Object();
+      person.firstname = "Bapi";
+      person.lastname = "Mandal";
+      person.age = 20;
+
+      console.log(person);
+      console.log(person instanceof Object);
+
+      person.changeAge = function (x) {
+        this.age = this.age + x;
+      };
+
+      person.changeAge(5);
+      console.log(person); */
+    </script>
+  </body>
+</html>
