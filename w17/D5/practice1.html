@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter First-Name:
+    <input type="text" id="fname" class="name" />
+    <br />
+    Enter Last-Name:
+    <input type="text" id="lname" class="name" />
+    <br />
+    Enter E-mail:
+    <input type="email" id="email" class="name" />
+    <br />
+    Enter Mob:
+    <input type="number" id="mob" class="name" />
+    <br />
+    <button class="btn">ok</button>
+  </body>
+
+  <script>
+    let fName = document.getElementsByClassName("name");
+    // let lName = document.getElementsByClassName("name");
+    let s = document.querySelector(".btn");
+    s.addEventListener("click", function (e) {
+      console.log(fName);
+    });
+    /*let d = [];
+    let firstName = document.getElementById("fname");
+    let lastName = document.getElementById("lname");
+    let email = document.getElementById("email");
+    let phone = document.getElementById("mob");
+    let button = document.querySelector(".btn");
+    button.addEventListener("click", function (eve) {
+      eve.preventDefault();
+      console.log("name:", firstName.value);
+      console.log("lastName:", lastName.value);
+      console.log("email:", email.value);
+      console.log("phone:", phone.value);
+      let data = {
+        name: firstName.value,
+        lastName: lastName.value,
+        email: email.value,
+        mobile: phone.value,
+      };
+      //   console.log(data);
+      d.push(data);
+      console.log(d);
+      firstName.value = "";
+      lastName.value = "";
+      email.value = "";
+      phone.value = "";
+    }); */
+  </script>
+</html>
