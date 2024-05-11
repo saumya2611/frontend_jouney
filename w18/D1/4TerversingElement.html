@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <p id="note">A paragraph</p>
+    </div>
+
+    <ul id="menu">
+      <li class="first">HOME</li>
+      <li>About</li>
+      <li class="current">Services</li>
+      <li>Contact</li>
+      <li class="last">Blog</li>
+      <li>saumya</li>
+      <li>suyash</li>
+    </ul>
+  </body>
+  <script>
+    // Traversing HTML Elements
+
+    // 1. Get parent of a node(element)
+    // 2. Get children of a node
+    // 3. Get siblings of a node
+
+    // 1. Get parent of a node
+    let child = document.querySelector("#note");
+    let output = child.parentElement;
+    console.log(output);
+
+    /*  let note = document.querySelector("#note");
+     console.log(note);
+     let parent = note.parentNode;
+      let parent = note.parentElement;
+     console.log(parent);
+     console.log(parent.id); */
+    // 2. Get children of a node
+
+    // Get first child of a parent
+    /* let menu = document.querySelector("#menu");
+     let firstChild = menu.firstElementChild;
+     console.log(firstChild); */
+
+    // // Get last child of a parent
+
+    /*  let lastChild = menu.lastElementChild;
+     console.log(lastChild); */
+
+    // // Get all children
+    /* let children = menu.children;
+     console.log(children);
+     console.log(children[2]); */
+
+    // // Get previous sibling
+    // let current = document.querySelector(".current");
+    /* console.log(current);
+     let pre = current.previousElementSibling;
+     console.log(pre); */
+
+    // // get next sibling
+    /*let nextSibling = current.nextElementSibling;
+    console.log(nextSibling); */
+
+    // // Get all next siblings
+
+    /* while (nextSibling) {
+      console.log("next", nextSibling);
+      nextSibling = nextSibling.nextElementSibling;
+    } */
+
+    // // Get all previous siblings
+    // let prevSibling = current.previousElementSibling;
+    // while (prevSibling) {
+    //   console.log("prev", prevSibling);
+    //   prevSibling = prevSibling.previousElementSibling;
+    // }
+  </script>
+</html>
