@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .form {
+        width: 40%;
+        margin: auto;
+        height: 95vh;
+        border: 1px solid rgb(197, 194, 194);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+        margin-top: 0.3rem;
+      }
+
+      .form-set {
+        margin-left: 3rem;
+      }
+
+      label {
+        display: block;
+        /* text-align: center; */
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+
+      input {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        width: 80%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        border: 1px solid rgb(197, 194, 194);
+        border-radius: 0.3rem;
+      }
+
+      input:hover {
+        border-color: purple;
+      }
+
+      select {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        width: 80%;
+      }
+
+      .btn {
+        margin-top: 1rem;
+        padding-right: 0.5rem;
+        /* width: 30%; */
+        font-size: 1rem;
+        background-color: #04aa6d;
+        color: #fff;
+      }
+
+      .btn:hover {
+        background-color: #e7e7e7;
+        color: #04aa6d;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form">
+      <div class="form-set">
+        <form name="myform" onsubmit="return validateform()">
+          <div>
+            <label for="">Name:</label>
+            <input type="text" name="name" placeholder="Your Name" />
+          </div>
+          <div>
+            <label for="">Password:</label>
+            <input
+              type="password"
+              name="password"
+              placeholder=" your password"
+            />
+          </div>
+          <div>
+            <label> Confirm Password:</label>
+            <input
+              type="password"
+              name="cpassword"
+              placeholder=" your confirm password"
+            />
+          </div>
+
+          <div>
+            <label for="">Age:</label>
+            <input type="text" name="age" placeholder=" your age" />
+          </div>
+          <div>
+            <label>Email:</label>
+            <input type="text" name="email" placeholder=" your email" />
+          </div>
+          <div>
+            <label for="">Country</label>
+            <select name="country">
+              <option value="-1" selected>Choose your country--</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="INDIA">INDIA</option>
+            </select>
+          </div>
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+    </div>
+    <script>
+      // onsubmit event
+
+      function validateform() {
+        const name = document.myform.name.value;
+        console.log(name);
+        const password = document.myform.password.value;
+        console.log(password);
+        const cpassword = document.myform.cpassword.value;
+        console.log(cpassword);
+        const age = document.myform.age.value;
+        console.log(age);
+        const email = document.myform.email.value;
+        console.log(email);
+        const country = document.myform.country.value;
+        console.log(country);
+
+        if (name == "" || name == null) {
+          alert("Name can't be blank and it must be alphabetic");
+          return false;
+        }
+        if (password.length < 6) {
+          alert("Password must be of min 6 characters");
+          return false;
+        }
+        if (password !== cpassword) {
+          alert("Password and confirm password must be equal");
+          return false;
+        }
+        if (isNaN(age)) {
+          alert("Age must be a number");
+          return false;
+        }
+        if (country == -1) {
+          alert("Please select country");
+          return false;
+        }
+
+        let atpos = email.indexOf("@");
+        let dotpos = email.lastIndexOf(".");
+
+        // console.log("atpos", atpos);
+        // console.log("dotpos", dotpos);
+
+        if (atpos < 1 || dotpos - atpos < 2) {
+          alert("Please enter correct email");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
