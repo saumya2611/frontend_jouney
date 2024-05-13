@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      // Keyboard Event
+
+      // Program to check which key is pressed by the user.
+
+      // window.addEventListener("keydown", keycheck);
+
+      // function keycheck(event) {
+      //     console.log(event.key);
+
+      //     if (event.key == "Enter") {
+      //         alert("You have pressed Enter key");
+      //     }
+      // }
+
+      // window.addEventListener("scroll", function () {
+      //     console.log("scrolling..");
+      // });
+
+      // window.addEventListener("wheel", function (event) {
+      //     // console.log(event.deltaY);
+
+      //     if (event.deltaY < 0) {
+      //         console.log("scrolling up");
+      //     }
+      //     else {
+      //         console.log("scrolling down");
+      //     }
+      // })
+
+      window.addEventListener("scroll", function (event) {
+        console.log(window.pageYOffset);
+
+        if (window.pageYOffset > 150) {
+          document.bgColor = "red";
+        } else {
+          document.bgColor = "white";
+        }
+      });
+    </script>
+  </body>
+</html>
