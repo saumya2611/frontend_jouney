@@ -59,7 +59,7 @@ const showData = (data)=> {
         const price = document.createElement('td')
         price.innerHTML =  item.price
         const brand = document.createElement('td')
-        brand.innerHTML =  item.brand
+        brand.innerHTML =  item.brand ? item.brand : '-'
         const category = document.createElement('td')
         category.innerHTML =  item.category
         const thumbnail = document.createElement('td')
@@ -91,6 +91,7 @@ const onChangePagenation = (pageNumber, limit)=> {
 }
 
 const createPegination = (total,limit) => {
+    peginationButton.innerHTML = ''
     const pegination = Math.ceil(total/limit)
     console.log('pegination',pegination);
     for(let i = 1; i <= pegination; i++) {
