@@ -99,6 +99,6 @@ const createPegination = (total,limit) => {
         buttton.innerHTML = i
         buttton.addEventListener('click',() => {onChangePagenation(i, limit)})
         peginationButton.append(buttton)
-
     }
 }
+
