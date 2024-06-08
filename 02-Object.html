@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // instance of operator
+
+      const person = { name: "saumya", age: 22 };
+
+      // We cannot compare object with (==) , (===)
+      const person1 = { name: "viraj", age: 1 };
+      const person2 = { name: "viraj", age: 1 };
+
+      // We cannot compare object with (==) , (===)
+      console.log(person1 == person2);
+      console.log(person1 === person2);
+
+      const str = "abc";
+      const str1 = "abc";
+      console.log(str == str1);
+      console.log(str === str1);
+
+      // By JSON.Stringify
+
+      // -0 and +0 is different when we comparing Object.is()
+      const p = +0;
+      const q = -0;
+      console.log("p==q", p == q);
+      console.log("p===q", p === q);
+      console.log("p is q", Object.is(p, q)); // false
+    </script>
+  </body>
+</html>
