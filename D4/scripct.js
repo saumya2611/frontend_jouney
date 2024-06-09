@@ -2,6 +2,15 @@ const table = document.querySelector('#table')
 console.log('table is',table);
 const pageButton = document.querySelector('#pageButton')
 console.log('pageButton =>',pageButton);
+let inputBox = document.getElementById('inputBox')
+console.log('inputBox =>',inputBox);
+const searchBtn = document.getElementById('search-btn')
+console.log('searchBtn =>',searchBtn);
+let data = []
+
+
+
+
 
 function loadColumn() {
     const headingRow = document.createElement('tr')
@@ -40,6 +49,7 @@ function fetchData(limit,skip) {
     fetch(url).then((res)=>{return res.json()})
     .then((res) => {
         console.log('res is=>',res)
+        data = res.products
         showData(res.products)
         createPagination(res.total,res.limit)
 })
@@ -106,3 +116,16 @@ function onChangePagenation(pageNumber,limit) {
     const skip = (pageNumber - 1) * limit
     fetchData(limit,skip)
 }
+
+searchBtn.addEventListener('click',function(){
+    console.log('input value =>',inputBox.value);
+    console.log('data--->', data)
+    // inputBox.value = ''
+    const newData = data.filter((item)=>{
+        return item.title.toLowerCase().includes(inputBox.value.toLowerCase())
+    })
+        table.innerHTML = ''
+        loadColumn()
+        showData(newData)
+        console.log('newData--->', newData)
+})

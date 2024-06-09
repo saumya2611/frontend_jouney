@@ -4,7 +4,41 @@
     box-sizing: border-box;
 }
 
+#search-box {
+    padding: 1rem 1rem;
+    /* height: 10vh;
+    width: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input {
+    height: 5vh;
+    width: 300px; 
+    padding-left: .5rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+input:focus {
+    border: 1px solid green;
+}
+
+#search-btn {
+    padding: .3rem .6rem;
+    margin-left: .5rem;
+    background-color: #111;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 #table {
+    margin-top: 1rem;
     border: 2px solid black;
 }
 
