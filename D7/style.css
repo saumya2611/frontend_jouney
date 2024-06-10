@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#tabel tr th {
+    border: 1px solid black;
+    padding: 1rem 0.75rem;
+    width: 200px;
+
+}
+
+#tabel tr {
+    display: flex;
+}
+
+#tabel tr td {
+    border: 1px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabel tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.216);
+}
+
+#pageButton {
+    padding: 1rem 1rem;
+    color: black;
+}
+ 
