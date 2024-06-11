@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+#searchBox {
+
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+#inputBox {
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+#inputBox:focus {
+    border: 1px solid green;
+}
+
+#searchBtn {
+    background: black;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: .7rem 1rem;
+}
+
 #tabel tr th {
     border: 1px solid black;
     padding: 1rem 0.75rem;
@@ -30,7 +58,21 @@
 }
 
 #pageButton {
-    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    /* margin-top: 1rem;
+    margin-left: 1rem; */
     color: black;
 }
  
+button {
+    margin-left: 0.2rem;
+    padding: .5rem .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+    
+}
+

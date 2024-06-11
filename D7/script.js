@@ -3,6 +3,14 @@ console.log('tabel is =>',tabel);
 const pageButton = document.getElementById('pageButton')
 console.log('pageButton is =>',pageButton);
 
+const inputBox = document.getElementById('inputBox')
+console.log('input Box is =>',inputBox);
+
+const searchBtn = document.getElementById('searchBtn')
+console.log('searchBtn is =>',searchBtn);
+
+let filterData;
+
 function loadColumn() {
     const tdRow = document.createElement('tr')
     const SNo = document.createElement('th')
@@ -67,52 +75,54 @@ function showData(data) {
 })
 }
 
-// function createPagination(total,limit) {
-//     const page = Math.ceil(total/limit)
-//     console.log('page is =>',page);
-//     for(let i = 1; i <= page; i++) {
-//         const btn = document.createElement('button')
-//         btn.innerHTML = i
-//         btn.addEventListener('click',() => {onChangePagenation(i,limit)})
-//         pageButton.append(peginationButton)
-        
-//     }
-    
-// }
-
-
 function createPagination(total,limit) {
+    
     const page = Math.ceil(total/limit)
     console.log('page is =>',page);
     for(let i = 1; i <= page; i++) {
-        const peginationButton = document.createElement('button')
-        peginationButton.innerHTML = i
-        peginationButton.addEventListener('click',() => {onChangePagenation(i,limit)})
-        pageButton.append(peginationButton)
+        const btn = document.createElement('button')
+        btn.innerHTML = i
+        btn.addEventListener('click',() => {onChangePagenation(i,limit)})
+        pageButton.append(btn)
+        
     }
-}   
+    
+ }
+
+ function onChangePagenation(pageNumber,limit) {
+    const skipData = (pageNumber - 1) * limit
+    fetchData(limit,skipData)
+
+ }
+
 
 function fetchData(limit,skip) {
-// const url = `https://dummyjson.com/products?limit=${limit}&skip=${skip}`
-
-// fetch(url).then((res) => {
-//     return res.json()
-// }).then((res) => {
-//     console.log('res is',res.products);
-//     showData(res.products)
-//     createPagination(res.total,res.limit)
-
-
+tabel.innerHTML = ''
+pageButton.innerHTML = ''
+loadColumn()
 
     const url = `https://dummyjson.com/products?limit=${limit}&skip=${skip}`;
-
     fetch(url).then((res) => {return res.json()})
     .then((res) => {console.log('res is =>',res)
-    data = res.products
+    filterData = res.products
     showData(res.products)
     createPagination(res.total,res.limit)
 }).catch((err) => {'Network Error'})
 
-
 }
-fetchData(20,0) 
+fetchData(30,0) 
+
+searchBtn.addEventListener('click',function() {
+    console.log('search is =>',inputBox.value);
+    console.log('filterData is =>',filterData);
+    const newData = filterData.filter((item) => {
+        return item.title.toLowerCase().includes(inputBox.value.toLowerCase())
+    })
+
+    console.log('newData is=>',newData);
+    tabel.innerHTML = ''
+    loadColumn()
+    showData(newData)
+
+    inputBox.value = ''
+})
