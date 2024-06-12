@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //filter function
+//        // write a program to print all numbers that are greater than 50 from an array
+
+//        var x=[3,7,8,90,32,56,78,101,107];
+
+//       var y= x.filter(
+//         function(element){
+
+//             // return  !(element>50);
+//             return  element%2==0 || element%3==0;
+
+//         }
+//        )
+//        console.log("after filter",y);
+
+//        // write a program to check divisibilty by both 7 and 5
+
+     var n=Number(prompt("enter no of elements"));
+     var arr=[];
+      for (let i=0;i<n;i++){
+    
+      var x= Number(prompt("enter data"));
+     arr.push(x);
+
+     }
+     console.log("array is",arr);
+
+     var z= arr.filter(
+        function (element){
+       return  element%7==0 || element%5==0;
+
+        }
+     )
+     console.log("after filter",z);
+
+
+
+     
+
+    </script>
+</body>
+</html>
