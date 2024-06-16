@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // WAP to display current date and time on button click
+      function showDate() {
+        document.getElementById("para1").innerText = new Date();
+        document.getElementById("para1").innerText = "New Text";
+        document.getElementById("para1").style.color = "red";
+        document.getElementById("para1").style.fontSize = "2rem";
+        // let x = document.getElementById("para1").innerHTML;
+        // x.style.color = "red";
+      }
+
+      function bg() {
+        document.getElementById("Heading-1").style.background = "yellow";
+      }
+    </script>
+    <p id="para1">Js is good</p>
+    <button onclick="showDate()">click to see current date</button>
+    <h1 id="Heading-1">Hello Saumya</h1>
+    <button onclick="bg()">change background color</button>
+  </body>
+</html>
