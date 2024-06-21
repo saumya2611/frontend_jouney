@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*  const person = new Object();
+      person.name = "saumya";
+      person.age = 22;
+      person.city = "Delhi";
+
+      console.log(person);
+
+      // Object Literal - key Value Pair
+      const data = {
+        name: "suyash",
+        age: 24,
+        city: "kanpur",
+        player: { name: "virat", age: 38 },
+      };
+      //   let data1 = data.player;
+
+      data["hobies"] = "cricket";
+
+      delete data.hobies;
+
+      let b = Object.hasOwnProperty(); */
+
+      /* const obj1 = { id1: 1, name1: "saumya" };
+      obj1.name1 = "bapi";
+
+      // obj1.name = "saumya";
+      // const obj2 = obj1;
+
+      // console.log("obj1", obj1);
+      // console.log("obj2", obj2);
+
+      const obj3 = { id2: 2, name2: "suyash" };
+      const data = Object.assign({}, obj1, obj3);
+      console.log(data);
+
+      // Desturcturing
+
+      const student = {
+        id: 1,
+        name: "bapi",
+        state: "bangla desh",
+        education: "graduate",
+        hobbies: { h1: "cricket", h2: "cooking" },
+      };
+
+      const { id: id1, hobbies } = student;
+
+      console.log(id1, hobbies);
+
+      student.c = function () {
+        console.log(`name is ${this.name}`);
+      };
+      student.c(); */
+
+      var library = [
+        {
+          title: "The Road Ahead",
+          author: "Bill Gates",
+          libraryID: 1254,
+        },
+        {
+          title: "Walter Isaacson",
+          author: "Steve Jobs",
+          libraryID: 4264,
+        },
+        {
+          title: "Mockingjay: The Final Book of The Hunger Games",
+          author: "Suzanne Collins",
+          libraryID: 3245,
+        },
+      ];
+
+      greater = 0;
+
+      for (let i = 0; i < library.length; i++) {
+        for (let j = i + 1; j < library.length; j++) {
+          if (library[i]["libraryID"] > library[j]["libraryID"]) {
+            greater = library[i]["libraryID"];
+            library[i]["libraryID"] = library[j]["libraryID"];
+            library[j]["libraryID"] = greater;
+          }
+        }
+      }
+
+      function loginUser(user) {
+        return `The user ${user.name} with the id of ${user.id} is logged in`;
+      }
+
+      const user = {
+        id: 1,
+        name: "Saumya",
+      };
+
+      console.log(loginUser(user));
+      console.log(loginUser({ id: 2, name: "sanaya" }));
+      console.log(loginUser({ id: 3, name: "bapi" }));
+
+      // console.log(
+      //   loginUser({
+      //     id: 2,
+      //     name: "Sara",
+      //   })
+      // );
+      // console.log(
+      //   loginUser({
+      //     id: 3,
+      //     name: "Suyash",
+      //   })
+      // );
+    </script>
+  </body>
+</html>
