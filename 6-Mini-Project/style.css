@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 600;   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     line-height: 1.6;
     background-color: #27264b;
     color: #433f63;
@@ -64,15 +64,15 @@ li {
 
 .card-pro h2 {
     background: linear-gradient(90deg,
-    rgba(194,227,255,1) 13%,
-    rgba(180,118,254,1) 100%);
+            rgba(194, 227, 255, 1) 13%,
+            rgba(180, 118, 254, 1) 100%);
     color: #fff;
 }
 
 .card-enterprise {
     background: linear-gradient(90deg,
-    rgba(255,117,194,1) 13%,
-    rgba(255,203,114,1) 100%);
+            rgba(255, 117, 194, 1) 13%,
+            rgba(255, 203, 114, 1) 100%);
     color: #fff;
 }
 
@@ -112,7 +112,8 @@ li {
     font-size: 16px;
 }
 
-.btn-primary,.btn:hover {
+.btn-primary,
+.btn:hover {
     background-color: #27264b;
     color: #fff;
 }
@@ -120,7 +121,7 @@ li {
 .btn-primary:hover {
     background-color: #fff;
     color: #27264b;
-} 
+}
 
 /* List */
 .card ul {
@@ -132,4 +133,42 @@ li {
     color: #98ca9e;
     margin-right: 10px;
 }
+
+/* Media Queries */
+@media(max-width: 768px) {
+    .pricing {
+        flex-direction: column;
+        /* display: block; */
+    }
+
+    .container {
+        margin: 2rem;
+        padding: 40px 30px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 920px) {
+    .pricing {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 3rem;
+        padding: 5rem 5rem;
+        font-size: 30px;
+    }
+
+    .card h2 {
+        font-size: 40px;
+    }
+
+    .btn {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .card .main-text {
+        font-size: 30px;
+    }
+} 
 
