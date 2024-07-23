@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppin', sans-serif;
+}
+
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input,
+input,textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* outline: none; */
+}
+
+button {
+    display: block;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*  Select by type attribute */
+input[type='email'] {
+    border-color: green;
+}
+
+/*  Select by name attribute */
+input[name='name'] {
+    border-color: blue;
+}
+
+/* Select text type and id of name */
+input[type='text'][id='name'] {
+    background-color: lightblue;
+}
+
+/* Select required inputs */
+
+/* Simple selectors (select elements based on name, id, class)
+
+
+/* Combinator selectors (select elements based on a specific relationship between them) 
+/* descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) */
+
+/* Pseudo-class selectors (select elements based on a certain state)
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus */
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)                                                                                                                                                  

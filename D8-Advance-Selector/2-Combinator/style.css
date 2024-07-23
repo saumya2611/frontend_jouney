@@ -1,0 +1,43 @@
+/* Combinator selectors (select elements based on a specific relationship between them) 
+/* descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) */
+
+/* Get only paragraph that are direct children of container */
+/* descendant selector (space) */
+/* .container  p {
+    font-weight: bold;
+    margin-bottom: 10px;
+} */
+
+/* child selector (>) */
+.container > p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container > ul {
+    list-style-type: none;
+}
+
+.container > a {
+    color: red;
+}
+
+
+/* adjacent sibling selector (+) */
+
+.container h1 + a {
+    color: green;
+    font-weight: bold;
+}
+
+/* general sibling selector */
+.container h1 ~ a {
+    color: purple;
+}
+
+.container > ul ~ div {
+    background: blue;
+}
