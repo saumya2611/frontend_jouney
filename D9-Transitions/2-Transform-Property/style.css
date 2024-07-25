@@ -1,0 +1,53 @@
+/* rotate()==> Rotate by number of defrees 
+ scale()==> Scales by a specific number  
+ skew()==> Skews by number of degrees 
+translate()==> Move element along X and Y axis */
+
+body {
+    font-family: 'Arial',sans-serif;
+}
+
+.container {
+       /* max-width: 600px;
+       margin: 130px auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;   */
+
+}
+
+.logo {
+    /* max-width: 60%; */
+    /* transform: rotate(90deg); */
+    /* transition: all 0.5s;
+    cursor: pointer; */
+}
+
+
+
+
+.logo:hover {
+    /* transform: rotate(-90deg);
+    transform: translateX(200px);
+    transform: translateY(-200px);
+    transform: translate(200px, 200px);
+    transform: skew(30deg);
+    transform: scale(1.5);
+    transform: rotate(180deg) skew(30deg); */
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #f4f4f4;
+    height: 400px;
+}
+
+.logo {
+    position: absolute;
+    max-width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
