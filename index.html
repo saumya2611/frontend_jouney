@@ -3,37 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <link rel="icon" href="./img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/favicon.png" />
     <title>Welcome To Tutor</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
       <div class="navbar-flex container">
-        <img src="./img/logo.svg" alt="" />
+        <a href="/" aria-label="Logo Home Link">
+          <img src="images/logo.svg" alt="Tutor Logo" />
+        </a>
+
         <div class="main-menu-items">
           <ul class="main-menu-list">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#chapter">Chapters</a>
+              <a href="#chapters">Chapters</a>
             </li>
             <li>
               <a href="#summary">Summary</a>
@@ -42,15 +42,26 @@
               <a href="#takeaways">Takeaways</a>
             </li>
             <li>
+              <a href="#author">Author</a>
+            </li>
+            <li>
               <a href="contact.html">Contact</a>
             </li>
             <li>
-              <a href="facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Follow Us On Facebook"
+              >
                 <i class="fa-brands fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="twitter.com" target="_blank">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                aria-label="Follow Us On Twitter"
+              >
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
@@ -60,14 +71,21 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu">
           <!-- Hamburger button -->
-          <div class="mobile-menu-toggle">
+          <div
+            class="mobile-menu-toggle"
+            role="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu-items"
+            aria-label="Open mobile menu"
+            tabindex="0"
+          >
             <i class="fas fa-bars fa-2x"></i>
           </div>
-          <!-- Mobile menu items -->
-          <div class="mobile-menu-items">
+          <!-- Mobile Menu Items -->
+          <div id="mobile-menu-items" class="mobile-menu-items">
             <ul class="mobile-menu-list">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#chapters">Chapters</a>
@@ -79,15 +97,26 @@
                 <a href="#takeaways">Takeaways</a>
               </li>
               <li>
+                <a href="#author">Author</a>
+              </li>
+              <li>
                 <a href="contact.html">Contact</a>
               </li>
               <li>
-                <a href="facebook.com" target="_blank">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  aria-label="Follow Us On Facebook"
+                >
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="twitter.com" target="_blank">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  aria-label="Follow Us On Twitter"
+                >
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
@@ -104,13 +133,13 @@
           <h1>Create Your Own Video Courses</h1>
           <p>
             Dive deep into the world of creativity and learn to craft stunning
-            videos that captive your audience.
+            videos that captivate your audience.
           </p>
-
           <a href="#" class="btn">$29 Get Course</a>
         </div>
-        <img src="img/header-course.png" alt="" />
+        <img src="images/header-course.png" alt="hero" />
       </div>
+
       <svg
         class="frame-decoration"
         data-name="Layer 2"
@@ -146,10 +175,11 @@
             enhance your skills.
           </p>
         </div>
+
         <div class="topics">
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-1.jpg" alt="topic" />
+              <img src="images/description-1.jpg" alt="topic" />
             </div>
             <div class="topic-text">
               <h3>Set Clear Objectives and Goals</h3>
@@ -158,23 +188,25 @@
 
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-2.jpg" alt="alternative" />
+              <img src="images/description-2.jpg" alt="alternative" />
             </div>
             <div class="topic-text">
               <h3>Plan Layout And Design Elements</h3>
             </div>
           </div>
+
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-3.jpg" alt="alternative" />
+              <img src="images/description-3.jpg" alt="alternative" />
             </div>
             <div class="topic-text">
               <h3>Sketch Creative Concepts</h3>
             </div>
           </div>
+
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-4.jpg" alt="alternative" />
+              <img src="images/description-4.jpg" alt="alternative" />
             </div>
             <div class="topic-text">
               <h3>Establish Strong Call-to-Actions</h3>
@@ -183,16 +215,16 @@
 
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-5.jpg" alt="alternative" />
+              <img src="images/description-5.jpg" alt="alternative" />
             </div>
             <div class="topic-text">
-              <h3>Coose High-Quality HTML Templates</h3>
+              <h3>Choose High-Quality HTML Templates</h3>
             </div>
           </div>
 
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-6.jpg" alt="alternative" />
+              <img src="images/description-6.jpg" alt="alternative" />
             </div>
             <div class="topic-text">
               <h3>Create Impressive Layout Previews</h3>
@@ -201,7 +233,7 @@
 
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-7.jpg" alt="alternative" />
+              <img src="images/description-7.jpg" alt="alternative" />
             </div>
             <div class="topic-text">
               <h3>Master Landing Page Coding Techniques</h3>
@@ -210,7 +242,7 @@
 
           <div class="topic">
             <div class="topic-image">
-              <img src="img/description-8.jpg" alt="alternative" />
+              <img src="images/description-8.jpg" alt="alternative" />
             </div>
             <div class="topic-text">
               <h3>Launch Your Project Successfully Online</h3>
@@ -221,7 +253,7 @@
     </section>
 
     <!-- Course Chapter Section -->
-    <section class="chapters section" id="chapter">
+    <section class="chapters section" id="chapters">
       <div class="container">
         <div class="section-header">
           <h2>Main Course Chapters</h2>
@@ -232,10 +264,9 @@
             for video creation.
           </p>
         </div>
-
         <div class="chapter-cards">
           <div class="card">
-            <img src="img/chapters-icon-1.svg" alt="chapter 1" />
+            <img src="images/chapters-icon-1.svg" alt="chapter 1" />
             <h3>Setting Clear Objectives</h3>
             <p>
               Learn how to define clear objectives and goals for your video
@@ -243,7 +274,7 @@
             </p>
           </div>
           <div class="card">
-            <img src="img/chapters-icon-2.svg" alt="chapter 2" />
+            <img src="images/chapters-icon-2.svg" alt="chapter 2" />
             <h3>Content Creation Strategies</h3>
             <p>
               Dive into effective content creation strategies that resonate with
@@ -251,7 +282,7 @@
             </p>
           </div>
           <div class="card">
-            <img src="img/chapters-icon-3.svg" alt="chapter 3" />
+            <img src="images/chapters-icon-3.svg" alt="chapter 3" />
             <h3>Coding Essentials</h3>
             <p>
               Explore the fundamentals of coding for video projects, including
@@ -286,7 +317,6 @@
             </div>
           </div>
 
-          <!-- list-heade-2 -->
           <div class="list">
             <div class="list-header">Content Creation Strategies</div>
             <div class="list-item">
@@ -304,7 +334,6 @@
             </div>
           </div>
 
-          <!-- list-header-3 -->
           <div class="list">
             <div class="list-header">From Layout To HTML/CSS</div>
             <div class="list-item">
@@ -324,6 +353,7 @@
       </div>
     </section>
 
+    <!-- Info -->
     <section class="info" id="info">
       <div class="info-container">
         <div class="info-left"></div>
@@ -339,16 +369,16 @@
           <ul>
             <li><i class="fas fa-check"></i> Web Designers</li>
             <li><i class="fas fa-check"></i> Web Developers</li>
-            <li><i class="fas fa-check"></i> Marketing Professioanls</li>
+            <li><i class="fas fa-check"></i> Marketing Professionals</li>
             <li><i class="fas fa-check"></i> Entreprenuers</li>
-            <li><i class="fas fa-check"></i> Bussiness Owners</li>
+            <li><i class="fas fa-check"></i> Business Owners</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- Takeaways -->
-    <section class="takeaways" id="takeaways">
+    <section class="takeaways section" id="takeaways">
       <div class="container">
         <div class="section-header">
           <h2>Key Takeaways</h2>
@@ -359,51 +389,46 @@
             achieve:
           </p>
         </div>
-        <div class="takeaway-cards">
+        <div class="takeaways-cards">
           <div class="card">
             <i class="fas fa-rocket fa-3x text-primary"></i>
             <p>
-              <strong>Enhanced Skills</strong>- Develop advanced skills in web
+              <strong>Enhanced Skills</strong> - Develop advanced skills in web
               design & development
             </p>
           </div>
-
           <div class="card">
             <i class="fas fa-globe fa-3x text-primary"></i>
             <p>
-              <strong> Global Perspective </strong> - Gain insights into
-              industry trends and best practices
+              <strong>Global Perspective</strong> - Gain insights into industry
+              trends and best practices
             </p>
           </div>
-
           <div class="card">
             <i class="fas fa-cloud fa-3x text-primary"></i>
             <p>
-              <strong> Cloud Technology </strong> - Explore the latest cloud
+              <strong>Cloud Technology</strong> - Explore the latest cloud
               technologies and tools
             </p>
           </div>
-
           <div class="card">
             <i class="fas fa-user fa-3x text-primary"></i>
             <p>
-              <strong> Networking </strong> - Connect with fellow professionals
+              <strong>Networking </strong> - Connect with fellow professionals
               and expand your network
             </p>
           </div>
-
           <div class="card">
             <i class="fas fa-cog fa-3x text-primary"></i>
             <p>
-              <strong> Problem-Solving </strong> - Enhance your problem-solving
+              <strong>Problem-Solving</strong> - Enhance your problem-solving
               abilities and critical thinking skills
             </p>
           </div>
-
           <div class="card">
             <i class="fas fa-server fa-3x text-primary"></i>
             <p>
-              <strong> Technical Proficiency </strong> - Improve your technical
+              <strong>Technical Proficiency</strong> - Improve your technical
               proficiency and stay ahead in the digital landscape.
             </p>
           </div>
@@ -414,7 +439,7 @@
     <!-- Course Details -->
     <section class="details section" id="details">
       <div class="container details-flex">
-        <img src="./img/details.png" alt="details" />
+        <img src="images/details.png" alt="details" />
         <div class="details-content">
           <h2>Course Details</h2>
           <div class="heading-border"></div>
@@ -430,7 +455,7 @@
     <!-- Author Info -->
     <section class="details section" id="author">
       <div class="container details-flex">
-        <img src="./img/author.png" alt="details" />
+        <img src="images/author.png" alt="details" />
         <div class="details-content">
           <h2>Author Information</h2>
           <div class="heading-border"></div>
@@ -444,16 +469,14 @@
               <strong> Expertise: </strong> Lorem ipsum dolor sit amet
               consectetur.
             </li>
-
             <li>
-              <i class="fas fa-chevron-circle-right text-primary"></i>
-              <strong> Experience: </strong> Blandit turpis a est eget augue
+              <i class="fas fa-chevron-circle-right text-primary"></i
+              ><strong>Experience:</strong> Blandit turpis a est eget augue
               ornare.
             </li>
-
             <li>
-              <i class="fas fa-chevron-circle-right text-primary"></i>
-              <strong> Skills: </strong> Sed vulputate aliquet eget non velit.
+              <i class="fas fa-chevron-circle-right text-primary"></i
+              ><strong>Skills:</strong> Sed vulputate aliquet eget non velit.
             </li>
           </ul>
           <a href="#" class="btn">See Details</a>
@@ -461,26 +484,27 @@
       </div>
     </section>
 
+    <!-- Stats -->
     <section class="stats section" id="stats">
       <div class="container stats-flex">
-        <img src="./img/stats.png" alt="stats" />
+        <img src="images/stats.png" alt="stats" />
         <div class="stats-content">
-          <div class="stats-number">
+          <div class="stats-numbers">
             <div>
-              <h3>2000+</h3>
-              <p>Happy Users</p>
+              <h3 aria-labelledby="stats-happy-users">2000+</h3>
+              <p id="stats-happy-users">Happy Users</p>
             </div>
             <div>
-              <h3>358</h3>
-              <p>Issues Solved</p>
+              <h3 aria-labelledby="stats-issues-solved">358</h3>
+              <p id="stats-issues-solved">Issues Solved</p>
             </div>
             <div>
-              <h3>980</h3>
-              <p>Good Reviews</p>
+              <h3 aria-labelledby="stats-good-reviews">980</h3>
+              <p id="stats-good-reviews">Good Reviews</p>
             </div>
             <div>
-              <h3>216</h3>
-              <p>Case Studies</p>
+              <h3 aria-labelledby="stats-case-studies">216</h3>
+              <p id="stats-case-studies">Case Studies</p>
             </div>
           </div>
 
@@ -488,13 +512,12 @@
             Tutor is probably one of the best video courses on landing page
             making in the web industry
           </p>
-
           <a href="#" class="btn">Get The Course</a>
         </div>
       </div>
     </section>
 
-    <!-- NewsLetter -->
+    <!-- Newsletter -->
     <section class="newsletter section" id="newsletter">
       <div class="container newsletter-flex">
         <h2>Subscribe To Our Newsletter</h2>
@@ -516,16 +539,49 @@
 
     <!-- Social -->
     <section class="social section">
-      <div class="container social-flex">
+      <div class="container">
         <p>Follow us on social media for updates and news about our courses.</p>
-
         <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="Follow Us On Facebook"
+          >
+            <i class="fa-brands fa-facebook fa-2x"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            aria-label="Follow Us On Twitter"
+          >
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Follow Us On Instagram"
+            ><i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+          <a
+            href="https://linkdin.com"
+            target="_blank"
+            aria-label="Follow Us On Linkdin"
+            ><i class="fa-brands fa-linkedin fa-2x"></i>
+          </a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            aria-label="Follow Us On Youtube"
+          >
+            <i class="fa-brands fa-youtube fa-2x"></i>
+          </a>
+          <a
+            href="https://pinterest.com"
+            target="_blank"
+            aria-label="Follow Us On Pinterest"
+          >
+            <i class="fa-brands fa-pinterest fa-2x"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -538,9 +594,10 @@
           <li><a href="#">Privacy</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <p>&copy; 2024 - 2025 Totor. All rights reserved</p>
+        <p>&copy; 2024 - 2025 Tutor. All rights reserved</p>
       </div>
     </footer>
-    <script src="./Js/scripct.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
