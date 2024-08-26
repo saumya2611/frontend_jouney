@@ -3,610 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <title>My Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/m.css" />
-    <script src="./js/script.js" defer></script>
-    <title>Villa Agency</title>
+    <!-- <script src="./1-js.js" defer></script> -->
+    <script src="./2-js.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-flex container">
-        <div class="main_menu-item">
-          <ul class="info">
-            <li><i class="fa fa-envelope"></i> info@company.com</li>
-            <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
-          </ul>
-          <ul class="main_menu-links">
-            <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
     <header class="header">
-      <div class="header-area container">
-        <div class="header-area-flex">
-          <div id="logo">
-            <h1 class="logo">VILLA</h1>
-          </div>
-          <div class="header-area-list">
-            <ul class="header-area-menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Properties</a></li>
-              <li><a href="#">Propert Details</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li>
-                <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
-              </li>
-            </ul>
-          </div>
+      <nav class="nav container">
+        <h1 class="logo">Website</h1>
+        <ul class="nav-item">
+          <li class="nav-item-content"><a href="">Home</a></li>
+          <li class="nav-item-content"><a href="">Todo</a></li>
+          <li class="nav-item-content"><a href="">Sign Up</a></li>
+        </ul>
+      </nav>
 
-          <!-- Mobile Menu -->
-          <div class="mobile-menu">
-            <div class="mobile-menu-toggle">
-              <i class="fas fa-bars fa-2x"></i>
-            </div>
-            <div class="mobile-menu-items">
-              <ul class="mobile-menu-list">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#chapters">Properties</a>
-                </li>
-                <li>
-                  <a href="#summary">Property Details</a>
-                </li>
-                <li>
-                  <a href="#takeaways">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="headline">
+        <h2 id="main-heading">
+          Manage Your tasks. <span style="display: none">Hello</span>
+        </h2>
+        <button class="btn btn-headline">Learn More</button>
       </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-flex">
-        <div class="header-text">
-          <span class="categeory"> Toranto, <em>Canada</em></span>
-          <h2>
-            HURRY!
-            <br />
-            GET THE BEST VILLA FOR YOU
-          </h2>
-        </div>
-      </div>
+    <section class="todo-section container">
+      <h2>Your plan for today ?</h2>
+
+      <form class="form-todo">
+        <input type="text" name="" id="" placeholder="Add Todo" />
+        <input type="submit" value="Add Todo" class="btn" />
+      </form>
     </section>
 
-    <!-- Features -->
-    <section class="features">
-      <div class="features-flex container">
-        <div class="left-col row">
-          <div class="left-img">
-            <img src="./img/featured.jpg" alt="featured-1" />
-
-            <a href="" class="icon">
-              <img src="./img/featured-icon.png" alt="" />
-            </a>
-          </div>
+    <section class="section-sign-up container">
+      <h2>Sign Up</h2>
+      <form class="signupForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" />
         </div>
-        <div class="mid-col row">
-          <h6>| Featured</h6>
-          <h2>Best Appartment & Sea view</h2>
-          <div class="section-heading">
-            <h5>Best Useful links ?</h5>
-            <div class="vertical-line"></div>
-            <p class="description">
-              Get <strong>the best villa </strong>website template in HTML CSS
-              and Bootstrap for your business. TemplateMo provides you the
-              <a href="">best free CSS templates </a> in the world. Please tell
-              your friends about it.
-            </p>
-            <div class="vertical-line"></div>
-            <h5 class="description-1">How does this work ?</h5>
-            <div class="vertical-line"></div>
-            <h5 class="description-1">Why is villa Agency the best ?</h5>
-          </div>
+        <!-- <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div> -->
+        <div class="form-group">
+          <label for="confirmpassword">Confirm Password</label>
+          <input
+            type="confirmPassword"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
         </div>
-        <div class="right-col row">
-          <ul class="info-tabel">
-            <li>
-              <img src="./img/info-icon-01.png" alt="" />
-              <h4>
-                250 m2
-                <br />
-                <span> Total Flat Space </span>
-              </h4>
-            </li>
-            <li>
-              <img src="./img/info-icon-02.png" alt="" />
-              <h4>
-                Contract
-                <br />
-                <span> Total Flat Space </span>
-              </h4>
-            </li>
-
-            <li>
-              <img src="./img/info-icon-03.png" alt="" />
-              <h4>
-                Payment
-                <br />
-                <span> Total Flat Space </span>
-              </h4>
-            </li>
-
-            <li>
-              <img src="./img/info-icon-04.png" alt="" />
-              <h4>
-                Safety
-                <br />
-                <span> Total Flat Space </span>
-              </h4>
-            </li>
-          </ul>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" />
         </div>
-      </div>
-    </section>
-
-    <!-- Video View -->
-    <section class="video-view">
-      <div class="video-flex container">
-        <div class="video-content">
-          <h6 class="heading">| Video View</h6>
-          <h2 class="header">
-            Get Closer View <br />
-            & Different <br />
-            Feeling
-          </h2>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
         </div>
-      </div>
-    </section>
-
-    <!-- Video Frame -->
-    <div class="video-frame">
-      <div class="image center">
-        <img src="./img/video-frame.jpg" alt="video-frame" />
-        <a href="https://www.youtube.com/" target="_blank"
-          ><i class="fa fa-play"></i
-        ></a>
-      </div>
-    </div>
-
-    <!-- Fun fact -->
-    <section class="fun-fact">
-      <div class="fun-card container">
-        <div class="fun-wrapper">
-          <!-- fun-grid-card 1 -->
-          <div class="fun-grid">
-            <h2 class="fun-grid-card-number">34</h2>
-            <p class="description">
-              Buildings
-              <br />
-              Finished Now
-            </p>
-          </div>
-
-          <!-- fun-grid-card 2 -->
-          <div class="fun-grid">
-            <h2 class="fun-grid-card-number">12</h2>
-            <p class="description">
-              Years
-              <br />
-              Experience
-            </p>
-          </div>
-
-          <!-- fun-grid-card 3 -->
-          <div class="fun-grid">
-            <h2 class="fun-grid-card-number">24</h2>
-            <p class="description">
-              Awwards
-              <br />
-              Won 2023
-            </p>
-          </div>
+        <div class="form-group">
+          <label for="about">About Yourself</label>
+          <textarea name="about" id="about"></textarea>
         </div>
-      </div>
-    </section>
-
-    <!-- <div class="header-area-list">
-      <ul class="header-area-menu">
-        <li class="calendar">
-          <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
-        </li>
-      </ul>
-    </div> -->
-
-    <!-- Best Deal -->
-    <section class="best-deal">
-      <div class="deal container">
-        <!-- Deal-row -->
-        <div class="deal-row-1">
-          <div class="section-heading">
-            <h6 class="heading">| Best Deal</h6>
-            <h2 class="header">
-              Find Your Best <br />
-              Deal Right Now!
-            </h2>
-          </div>
-          <div class="tab-content">
-            <div class="tab-btn">
-              <button class="btn" id="appartment">Appartment</button>
-              <button class="btn" id="villa-house">Villa House</button>
-              <button class="btn" id="penthouse">Penthouse</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Deal row 2 appartment-row -->
-        <div class="deal-row-2" id="appartment-row">
-          <div class="info-tabel">
-            <ul class="info">
-              <li>Total Flat Space <span>540 m2</span></li>
-              <li>Floor number <span>3</span></li>
-              <li>Number of rooms <span>8</span></li>
-              <li>Parking Available <span>Yes </span></li>
-              <li>Payment Process <span>Bank</span></li>
-            </ul>
-          </div>
-
-          <div class="image">
-            <img src="./img/deal-01.jpg" alt="deal-01" />
-          </div>
-
-          <div class="content">
-            <h4>Extra Info About Property</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, do
-              eiusmod tempor pack incididunt ut labore et dolore magna aliqua
-              quised ipsum suspendisse.
-            </p>
-            <br />
-            <p>
-              Swag fanny pack lyft blog twee. JOMO ethical copper mug,
-              succulents typewriter shaman DIY kitsch twee taiyaki fixie hella
-              venmo after messenger poutine next level humblebrag swag franzen.
-            </p>
-            <ul class="header-area-menu">
-              <li class="calendar calendar-icon">
-                <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- villa-row -->
-        <div class="deal-row-2" id="villa-row">
-          <div class="info-tabel">
-            <ul class="info">
-              <li>Total Flat Space <span>250 m2</span></li>
-              <li>Floor number <span>26th</span></li>
-              <li>Number of rooms <span>5</span></li>
-              <li>Parking Available <span>Yes </span></li>
-              <li>Payment Process <span>Bank</span></li>
-            </ul>
-          </div>
-
-          <div class="image">
-            <img src="./img/deal-02.jpg" alt="deal-01" />
-          </div>
-
-          <div class="content">
-            <h4>Detail Info About Villa</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, do
-              eiusmod tempor pack incididunt ut labore et dolore magna aliqua
-              quised ipsum suspendisse.
-            </p>
-            <br />
-            <p>
-              Swag fanny pack lyft blog twee. JOMO ethical copper mug,
-              succulents typewriter shaman DIY kitsch twee taiyaki fixie hella
-              venmo after messenger poutine next level humblebrag swag franzen.
-            </p>
-            <ul class="header-area-menu">
-              <li class="calendar calendar-icon">
-                <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- penthouse-row -->
-        <div class="deal-row-2" id="penthouse-row">
-          <div class="info-tabel">
-            <ul class="info">
-              <li>Total Flat Space <span>320 m2</span></li>
-              <li>Floor number <span>34th</span></li>
-              <li>Number of rooms <span>6</span></li>
-              <li>Parking Available <span>Yes </span></li>
-              <li>Payment Process <span>Bank</span></li>
-            </ul>
-          </div>
-
-          <div class="image">
-            <img src="./img/deal-03.jpg" alt="deal-01" />
-          </div>
-
-          <div class="content">
-            <h4>Extra Info About Penthouse</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, do
-              eiusmod tempor pack incididunt ut labore et dolore magna aliqua
-              quised ipsum suspendisse.
-            </p>
-            <br />
-            <p>
-              Swag fanny pack lyft blog twee. JOMO ethical copper mug,
-              succulents typewriter shaman DIY kitsch twee taiyaki fixie hella
-              venmo after messenger poutine next level humblebrag swag franzen.
-            </p>
-            <ul class="header-area-menu">
-              <li class="calendar calendar-icon">
-                <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Properties Section -->
-    <section class="properties">
-      <div class="properties-container container">
-        <div class="section-heading">
-          <h6 class="heading">| Properties</h6>
-          <h2 class="header">
-            We Provide The <br />
-            Best Property <br />
-            You Like
-          </h2>
-        </div>
-
-        <!-- properties-row -->
-        <div class="properties-row">
-          <div class="properties-col-1">
-            <div class="properties-item">
-              <a href="">
-                <img src="./img/single-property.jpg" alt="property-02" />
-              </a>
-              <span class="categeory">Luxury Villa</span>
-              <h6>$2.264.000</h6>
-              <h4>
-                <a href="">18 New Street Maimi, OR 97219</a>
-              </h4>
-              <ul>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Area: <span>545m2</span></li>
-                <li>Floor: <span>3</span></li>
-                <li>Parking: <span>6 spots</span></li>
-              </ul>
-              <div class="main-button">
-                <a href="">Schedule a visit</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- properties-col-2 -->
-          <div class="properties-col-1">
-            <div class="properties-item">
-              <a href="">
-                <img src="./img/property-02.jpg" alt="property-02" />
-              </a>
-              <span class="categeory">Luxury Villa</span>
-              <h6>$2.264.000</h6>
-              <h4>
-                <a href="">54 Mid Street Florida, OR 27001</a>
-              </h4>
-              <ul>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Area: <span>545m2</span></li>
-                <li>Floor: <span>3</span></li>
-                <li>Parking: <span>6 spots</span></li>
-              </ul>
-              <div class="main-button">
-                <a href="">Schedule a visit</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- col-3 -->
-          <div class="properties-col-1">
-            <div class="properties-item">
-              <a href="">
-                <img src="./img/property-03.jpg" alt="property-03" />
-              </a>
-              <span class="categeory">Luxury Villa</span>
-              <h6>$2.264.000</h6>
-              <h4>
-                <a href="">26 Old Street Miami, OR 38540</a>
-              </h4>
-              <ul>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Area: <span>545m2</span></li>
-                <li>Floor: <span>3</span></li>
-                <li>Parking: <span>6 spots</span></li>
-              </ul>
-              <div class="main-button">
-                <a href="">Schedule a visit</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- row 2 -->
-          <div class="properties-col-1">
-            <div class="properties-item">
-              <a href="">
-                <img src="./img/property-04.jpg" alt="property-04" />
-              </a>
-              <span class="categeory">Luxury Villa</span>
-              <h6>$2.264.000</h6>
-              <h4>
-                <a href="">12 New Street Maimi, OR 12650</a>
-              </h4>
-              <ul>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Area: <span>545m2</span></li>
-                <li>Floor: <span>3</span></li>
-                <li>Parking: <span>6 spots</span></li>
-              </ul>
-              <div class="main-button">
-                <a href="">Schedule a visit</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- properties-col-2 -->
-          <div class="properties-col-1">
-            <div class="properties-item">
-              <a href="">
-                <img src="./img/deal-01.jpg" alt="single-property" />
-              </a>
-              <span class="categeory">Luxury Villa</span>
-              <h6>$2.264.000</h6>
-              <h4>
-                <a href="">34 Beach Street Maimi, OR 42680</a>
-              </h4>
-              <ul>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Area: <span>545m2</span></li>
-                <li>Floor: <span>3</span></li>
-                <li>Parking: <span>6 spots</span></li>
-              </ul>
-              <div class="main-button">
-                <a href="">Schedule a visit</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- col-3 -->
-          <div class="properties-col-1">
-            <div class="properties-item">
-              <a href="">
-                <img src="./img/deal-03.jpg" alt="single-property" />
-              </a>
-              <span class="categeory">Luxury Villa</span>
-              <h6>$2.264.000</h6>
-              <h4>
-                <a href="">22 New Street Maimi Portland, OR 16540</a>
-              </h4>
-              <ul>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Bedrooms: <span>8</span></li>
-                <li>Area: <span>545m2</span></li>
-                <li>Floor: <span>3</span></li>
-                <li>Parking: <span>6 spots</span></li>
-              </ul>
-              <div class="main-button">
-                <a href="">Schedule a visit</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section">
-      <div class="contact-container container">
-        <div class="section-heading">
-          <h6 class="heading">| Contact Us</h6>
-          <h2 class="header">
-            Get The Touch <br />
-            Tith Our Agents
-          </h2>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact-content -->
-
-    <section class="section-map">
-      <div class="contact-row conainer">
-        <div class="row-1">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="contact-item">
-            <div class="phone-number">
-              <img src="./img/phone-icon.png" alt="" />
-              <h6>
-                010-020-0340
-                <br />
-                <span>Phone Number</span>
-              </h6>
-            </div>
-            <div class="business-email">
-              <img src="./img/email-icon.png" alt="" />
-              <h6>
-                info@villa.co
-                <br />
-                <span>Business Email </span>
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form">
-          <div>
-            <label for="Full Name">Full Name</label>
-            <input type="text" placeholder="Your Name..." />
-          </div>
-
-          <div>
-            <label for="Email Address">Email Address:</label>
-            <input type="email" placeholder="Your E-mail..." />
-          </div>
-
-          <div>
-            <label for="subject">Subject</label>
-            <input type="text" placeholder="Subject..." />
-          </div>
-
-          <div>
-            <label for="message">Message</label>
-            <textarea name="" id="" placeholder="Your Message"></textarea>
-          </div>
-
-          <button>Send Message</button>
-        </div>
-      </div>
+        <button type="submit" class="btn signup-btn">SignUp</button>
+      </form>
     </section>
   </body>
 </html>
