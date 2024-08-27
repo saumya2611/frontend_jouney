@@ -1,90 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <script src="./1-js.js" defer></script> -->
-    <!-- <script src="./2-js.js" defer></script> -->
-    <!-- <script src="./classList-js.js" defer></script> -->
-    <script src="./createElement.js" defer></script>
+    <title>Dom traversing</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav container">
-        <h1 class="logo">Website</h1>
-        <ul class="nav-item">
-          <li class="nav-item-content"><a href="">Home</a></li>
-          <li class="nav-item-content"><a href="">Todo</a></li>
-          <li class="nav-item-content"><a href="">Sign Up</a></li>
-        </ul>
-      </nav>
-
-      <div class="headline">
-        <h2 id="main-heading">
-          Manage Your tasks. <span style="display: none">Hello</span>
-        </h2>
-        <button class="btn btn-headline">Learn More</button>
-      </div>
-    </header>
-
-    <section class="todo-section container">
-      <h2>Your plan for today ?</h2>
-
-      <form class="form-todo">
-        <input type="text" name="" id="" placeholder="Add Todo" />
-        <input type="submit" value="Add Todo" class="btn" />
-      </form>
-      <ul class="todo-list">
-        <!-- <li class="first-todo">todo1</li> -->
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4</li>
-        <li>item 5</li>
-      </ul>
-    </section>
-
-    <section class="section-sign-up container">
-      <h2>Sign Up</h2>
-      <form class="signupForm">
-        <div class="form-group">
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username" />
-        </div>
-        <!-- <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
-        </div> -->
-        <div class="form-group">
-          <label for="confirmpassword">Confirm Password</label>
-          <input
-            type="confirmPassword"
-            name="confirmPassword"
-            id="confirmPassword"
-          />
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="text" name="phone" id="phone" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
-        </div>
-        <div class="form-group">
-          <label for="about">About Yourself</label>
-          <textarea name="about" id="about"></textarea>
-        </div>
-        <button type="submit" class="btn signup-btn">SignUp</button>
-      </form>
-    </section>
+    <div class="container">
+      <h1>My Heading</h1>
+      <p>Some useful information</p>
+    </div>
   </body>
 </html>
