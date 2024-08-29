@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // object is a datatype. We store data in the form of key-value pair.
+
+      const person = { firstname: "hemant", lastname: "kumar", age: 20 };
+      // console.log("value of person object is ", person);
+      // console.table(person);
+      // console.log(typeof(person));
+
+      // check whether person is object or not
+
+      //    console.log(typeof(person)=="object")
+      //    if(typeof(person)=="object"){
+      //        console.log("Is object")
+      //    }
+      //    else{
+      //     console.log("Is not object")
+      //    }
+
+      // Access object properties
+      // There are two methods to access/change properties
+
+      // const { log } = console;
+      // console.log(person);
+      // console.log(person.age);
+      // console.log(person.firstname);
+      // console.log(person["lastname"])
+
+      /* log(person);
+      log(person.age);
+      log(person.firstname);
+      log(person["lastname"]); */
+
+      // Destructuring of object
+
+      //   const emp= {"id":"emp101", "name":"hemant", "salary":600000};
+
+      //   const {id, name}= emp
+      //   console.log(id);
+      //   console.log(name);
+
+      // Rename
+      // const {id:myid, name:myname}
+
+      // Copy an object
+      // Deep copy= changes to one object reflects in copied object.
+      // shares same reference
+      // 1. By using assignment operator
+      //   const emp2= emp;
+
+      //   console.log("Emp is ", emp)
+      //   console.log("Emp2 is ", emp2)
+
+      //   emp.salary= 50000;
+
+      //   console.log("Emp is ", emp)
+      //   console.log("Emp2 is ", emp2)
+
+      // 2. By using spread operator ...
+      // shallow copy
+      // Memory different
+
+      // const emp= {"id":"emp101", "name":"hemant", "salary":600000};
+
+      // const emp2={...emp}
+
+      // console.log("Emp is ", emp)
+      //   console.log("Emp2 is ", emp2)
+
+      //   emp.salary= 50000;
+
+      //   console.log("Emp is ", emp)
+      //   console.log("Emp2 is ", emp2)
+
+      // 3. object.assign function
+      // shallow copy
+
+      /* const emp = { id: "emp101", name: "hemant", salary: 600000 };
+
+      const emp2 = Object.assign({}, emp);
+
+      console.log("Emp is ", emp);
+      console.log("Emp2 is ", emp2);
+
+      emp.salary = 50000;
+
+      console.log("Emp is ", emp);
+      console.log("Emp2 is ", emp2); */
+
+      // Deep copy
+      const data = {
+        id: "emp-1",
+        name: "saumya",
+        salary: "50000",
+      };
+
+      const information = data;
+
+      console.log("Data is ", data);
+      console.log("information is ", information);
+
+      data.salary = 60000;
+      console.log("Data is ", data);
+      console.log("information is ", information);
+
+      // Shallow Copy
+      const data1 = { id: 1, name: "suyash" };
+      const data2 = { id: 1, name: "saumya" };
+      const data3 = Object.assign({}, data1, data2);
+
+      console.log("Data1 is =>", data1);
+      console.log("Data2 is =>", data2);
+      console.log("Data3 is =>", data3);
+
+      data1.address = "Delhi";
+      console.log("Data1 is =>", data1);
+      console.log("Data2 is =>", data2);
+      console.log("Data2 is =>", data3);
+    </script>
+  </body>
+</html>
