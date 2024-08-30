@@ -2,7 +2,7 @@
 // click
 // we can add event for three types
 
-const btnHeading = document.querySelector('.btn-heading');
+// const btnHeading = document.querySelector('.btn-heading');
 // console.log(btnHeading);
 
 
@@ -31,9 +31,23 @@ const btnHeading = document.querySelector('.btn-heading');
 // this keyword
 // Arrow func ke case me this ki value window object hoga
 // normal func ke case me jis btn pe click krenge vhi hoga
-btnHeading.addEventListener('click', function() {
-    console.log('You Clicked Me !!!');
-    console.log('value of this');
+// btnHeading.addEventListener('click', function() {
+//     console.log('You Clicked Me !!!');
+//     console.log('value of this');
     // console.log(this);
 
-});
+// });
+
+
+
+// 2.) keypress event
+// 3.) mouseover event
+
+
+
+const body = document.body;
+
+body.addEventListener('keypress', (e) => {
+    console.log(e.key);
+    
+})
