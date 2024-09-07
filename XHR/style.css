@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border: 2px solid #eee;
+    border-collapse: collapse;
+}
+
+
+table th  {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 1rem;
+    width: 25%;
+
+}
+
+table td {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+table tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
