@@ -1,6 +1,6 @@
 const inputText = document.querySelector('#input-text')
 // console.log(inputText)
-const btn = document.querySelector('.btn')
+const submitBtn = document.querySelector('.btn')
 // console.log(btn)
 const todoList = document.querySelector('.todo-list')
 const addRemoveButton = document.querySelector('.button')
@@ -10,13 +10,13 @@ const body = document.body
 let todoArr = []
 
 
-btn.addEventListener('click',function(){
+submitBtn.addEventListener('click',function(){
     const inputValue = inputText.value
     if(!inputValue.trim()) {
         alert('plzz fill input field')
         return
     }
-console.log(inputValue)
+// console.log(inputValue)
 
 todoListItem(inputValue)
 todoArr.push(inputValue)
@@ -51,9 +51,10 @@ window.addEventListener('load',function(){
 
   function addRemoveItem(event) {
   if(event.target.classList.contains('add')) {
-    const addItem = event.target.parentNode.parentNode.firstElementChild.firstElementChild
-    console.log('addItem=========>',addItem)
-    addItem.style.textDecoration = 'line-through'
+    const strikeItem = event.target.parentNode.parentNode.firstElementChild.firstElementChild;
+    console.log('addItem=========>',strikeItem)
+    strikeItem.style.textDecoration = 'underline';
+
   }
 
   if(event.target.classList.contains('remove')) {
