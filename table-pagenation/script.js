@@ -86,7 +86,7 @@ function createPagination(total,limit) {
         pageButton.append(btn)
     }
  }
- 
+
  function onChangePagenation(pageNumber,limit) {
     const skipData = (pageNumber - 1) * limit
     fetchData(limit,skipData)
@@ -105,7 +105,7 @@ loadColumn()
     showData(res.products)
     createPagination(res.total,res.limit)
 }).catch((err) => {'Network Error'})
-
+    
 }
 
 fetchData(30,0) 
