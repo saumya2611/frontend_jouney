@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: .5rem;
+}
+
+#inputBox {
+    padding: .5rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#inputBox:focus {
+    border: 1px solid green;
+}
+
+#searchBtn {
+    padding: 0rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+#tabel {
+    /* border: 2px solid black; */
+    /* width: 100%; */
+}
+
+/* #tabel tr th {
+    border-top: none;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0.75rem;
+    width: 200px;
+} */
+
+/* #tabel tr {
+    display: flex;
+} */
+
+/* #tabel tr td {
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+
+#tabel tr th {
+    border: 1px solid black;
+    padding: 1rem .75rem;
+    width: 157px;
+}
+
+#tabel tr {
+    display: flex;
+}
+
+#tabel tr td {
+    border: 1px solid black;
+    text-align: center;
+    width: 157px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+
+}
+
+#tabel tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.216);
+
+}
+
+#pageButton {
+    margin: 1rem 1rem;
+    color: black;
+}
+
+button {
+    margin-left: .3rem;
+    padding: .5rem .5rem;
+    border: none;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: aqua;
+}
+
+
+
+
+
